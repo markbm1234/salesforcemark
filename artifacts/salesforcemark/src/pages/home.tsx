@@ -205,21 +205,28 @@ function HeroSection() {
             </p>
 
             <h1 className="text-[28px] sm:text-[36px] lg:text-[40px] font-bold text-[#111827] leading-[1.2] tracking-tight" data-testid="text-hero-title">
-              Clean Up Salesforce,<br />
-              Automate Lead Flow,<br />
-              and <span className="text-[#1E3A8A]">Trust Your</span><br />
-              <span className="text-[#1E3A8A]">Data Again</span>
+              Salesforce Data Cleanup,<br />
+              Lead Automation, and<br />
+              <span className="text-[#1E3A8A]">Reporting Support</span>
             </h1>
 
-            <p className="mt-6 text-[18px] text-[#6B7280] leading-[1.6] max-w-[540px]" data-testid="text-hero-subtitle">
-              We help B2B companies clean up messy Salesforce data, automate lead routing, and build dashboards leadership can actually trust.
+            <p className="mt-6 text-[17px] text-[#6B7280] leading-[1.6] max-w-[540px]" data-testid="text-hero-subtitle">
+              I help Salesforce consulting firms, RevOps teams, and growing companies clean up messy data, automate lead flow, improve reporting, and stabilize Salesforce after implementation.
             </p>
 
-            <div className="mt-4 bg-[#EEF4FF] border-l-4 border-[#2563EB] rounded-md px-3.5 py-2.5 max-w-[480px]" data-testid="text-hero-qualifier">
-              <p className="text-[14px] text-[#1E3A8A] font-medium leading-[1.5]">
-                Best for companies already using Salesforce that need better data quality, automation, and reporting.
-              </p>
-            </div>
+            <ul className="mt-5 space-y-2 text-center md:text-left max-w-[480px] mx-auto md:mx-0">
+              {[
+                "Available for project-based and subcontract Salesforce work",
+                "Data cleanup, deduplication, and CRM normalization",
+                "Lead routing, automation, reporting, and integrations",
+                "Zapier and Clay workflow support",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2.5 justify-center md:justify-start">
+                  <CheckCircle2 className="w-4 h-4 text-[#16A34A] mt-0.5 shrink-0" />
+                  <span className="text-[14px] text-[#111827] leading-[1.5]">{item}</span>
+                </li>
+              ))}
+            </ul>
 
             <div className="mt-6 space-y-1 text-center md:text-left" data-testid="text-experience">
               <p className="text-[14px] text-[#111827] font-medium leading-[1.5]">
@@ -232,15 +239,15 @@ function HeroSection() {
 
             <div className="mt-8 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
               <Button size="lg" onClick={() => scrollTo("book-a-call")} className="border-0 bg-[#F59E0B] hover:bg-[#D97706] text-white text-[16px] px-7 shadow-lg shadow-[#F59E0B]/25" data-testid="button-hero-book">
-                Request Free Optimization Review
+                Discuss a Project
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
               <button
-                onClick={() => scrollTo("services")}
+                onClick={() => scrollTo("consulting-firms")}
                 className="text-[15px] font-medium text-[#1E3A8A] border border-[#1E3A8A]/30 px-5 py-2.5 rounded-lg hover:bg-[#1E3A8A]/[0.05] transition-colors"
-                data-testid="button-hero-services"
+                data-testid="button-hero-consulting"
               >
-                See Services
+                For Consulting Firms
               </button>
             </div>
           </div>
@@ -251,18 +258,76 @@ function HeroSection() {
   );
 }
 
-const bestFit = [
-  "B2B companies already using Salesforce",
-  "Teams generating inbound leads from websites, campaigns, events, or partners",
-  "Organizations with messy lead/contact data",
-  "Sales or marketing teams dealing with manual lead routing",
-  "Leaders who need reporting they can trust",
-];
+function ConsultingFirmsSection() {
+  const cards = [
+    {
+      title: "Consulting Firms",
+      copy: "Need help delivering part of a Salesforce project? I can support data cleanup, dashboards, automation, lead flow, and org optimization work as a subcontract or overflow resource.",
+      icon: Briefcase,
+    },
+    {
+      title: "RevOps / Marketing Ops Teams",
+      copy: "I help internal teams improve lead management, routing, reporting visibility, campaign tracking, and Salesforce data quality without requiring a full rebuild.",
+      icon: BarChart3,
+    },
+    {
+      title: "Direct Companies",
+      copy: "If your company finds me directly, I also take on targeted Salesforce projects involving cleanup, automation, reporting, and marketing-to-Salesforce workflow improvements.",
+      icon: Building2,
+    },
+  ];
 
-const notBestFit = [
-  "Brand new Salesforce implementations",
-  "Heavy custom development / Apex projects",
-  "Large multi-phase enterprise rollouts",
+  return (
+    <section id="consulting-firms" className="py-20 sm:py-24 bg-white" data-testid="section-consulting-firms">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <h2 className="text-[26px] sm:text-[30px] font-bold text-[#111827] tracking-tight text-center mb-4" data-testid="text-consulting-title">
+          Support for Consulting Firms, Agencies, and Internal Teams
+        </h2>
+        <p className="text-[16px] text-[#6B7280] text-center max-w-2xl mx-auto mb-12 leading-[1.6]">
+          I frequently support Salesforce consulting firms, RevOps teams, and marketing agencies with specialized project work. This includes data cleanup, reporting builds, lead routing logic, Salesforce optimization, Zapier integrations, and post-implementation cleanup.
+        </p>
+
+        <div className="grid md:grid-cols-3 gap-6 mb-8">
+          {cards.map((card, i) => (
+            <div
+              key={i}
+              className="rounded-xl bg-[#EEF4FF] p-6 border border-[#DBEAFE]"
+              style={{ boxShadow: "0 4px 6px -1px rgba(30,58,138,0.07), 0 10px 20px -5px rgba(30,58,138,0.10)" }}
+              data-testid={`card-consulting-${i}`}
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#1E3A8A]/10 flex items-center justify-center mb-4">
+                <card.icon className="w-5 h-5 text-[#1E3A8A]" />
+              </div>
+              <h3 className="text-[17px] font-bold text-[#111827] mb-3">{card.title}</h3>
+              <p className="text-[15px] text-[#6B7280] leading-[1.6]">{card.copy}</p>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-[14px] text-[#6B7280] text-center italic">
+          Best fit: scoped projects, cleanup work, reporting/dashboard builds, automation projects, and Salesforce stabilization work.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+const whoWeHelpCards = [
+  {
+    title: "Salesforce Consulting Firms",
+    copy: "Overflow project work, subcontract support, cleanup tasks, dashboard/reporting builds, automation support, and implementation follow-through.",
+    icon: Briefcase,
+  },
+  {
+    title: "Internal RevOps / Marketing Ops Teams",
+    copy: "Support for lead routing, CRM data cleanup, reporting visibility, campaign tracking, and operational automation.",
+    icon: Users,
+  },
+  {
+    title: "Growing Companies with Messy Salesforce Setups",
+    copy: "Best for companies needing cleanup, process improvement, practical automation, and better reporting without a massive consulting engagement.",
+    icon: Building2,
+  },
 ];
 
 function WhoWeHelpSection() {
@@ -272,44 +337,25 @@ function WhoWeHelpSection() {
         <h2 className="text-[26px] sm:text-[30px] font-bold text-[#111827] tracking-tight text-center mb-4" data-testid="text-who-title">
           Who We Work Best With
         </h2>
-        <p className="text-[16px] text-[#6B7280] text-center max-w-2xl mx-auto mb-4 leading-[1.6]">
+        <p className="text-[16px] text-[#6B7280] text-center max-w-2xl mx-auto mb-12 leading-[1.6]">
           Most clients come to us after Salesforce has been running for a while and their data, lead routing, or reporting has become messy.
         </p>
-        <p className="text-[15px] text-[#6B7280] text-center max-w-2xl mx-auto mb-12 leading-[1.6]">
-          We work best with companies that already use Salesforce and want to improve data quality, lead flow, automation, and reporting without hiring a full-time specialist.
-        </p>
 
-        <div className="max-w-3xl mx-auto grid md:grid-cols-2 gap-8">
-          <div
-            className="rounded-xl bg-[#EEF4FF] p-6 sm:p-8 border border-[#DBEAFE]"
-            style={{ boxShadow: "0 6px 12px -2px rgba(30,58,138,0.12), 0 16px 36px -6px rgba(30,58,138,0.16)" }}
-          >
-            <h3 className="text-[19px] font-bold text-[#111827] mb-5">
-              Best Fit
-            </h3>
-            <ul className="space-y-3">
-              {bestFit.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-[15px] text-[#111827] leading-[1.5]" data-testid={`text-best-fit-${i}`}>
-                  <CheckCircle2 className="w-4 h-4 text-[#16A34A] mt-0.5 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="rounded-xl bg-white p-6 sm:p-8 border border-[#E5E7EB]">
-            <h3 className="text-[19px] font-bold text-[#111827] mb-5">
-              Not the Best Fit
-            </h3>
-            <ul className="space-y-3">
-              {notBestFit.map((item, i) => (
-                <li key={i} className="flex items-start gap-3 text-[15px] text-[#6B7280] leading-[1.5]" data-testid={`text-not-fit-${i}`}>
-                  <XCircle className="w-4 h-4 text-[#9CA3AF] mt-0.5 shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-6">
+          {whoWeHelpCards.map((card, i) => (
+            <div
+              key={i}
+              className="rounded-xl bg-white p-6 border border-[#E5E7EB]"
+              style={{ boxShadow: "0 4px 6px -1px rgba(30,58,138,0.06), 0 10px 20px -5px rgba(30,58,138,0.08)" }}
+              data-testid={`card-who-${i}`}
+            >
+              <div className="w-10 h-10 rounded-lg bg-[#FEF3C7] flex items-center justify-center mb-4">
+                <card.icon className="w-5 h-5 text-[#D97706]" />
+              </div>
+              <h3 className="text-[16px] font-bold text-[#111827] mb-2">{card.title}</h3>
+              <p className="text-[14px] text-[#6B7280] leading-[1.6]">{card.copy}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -317,14 +363,14 @@ function WhoWeHelpSection() {
 }
 
 const problems = [
-  { text: "Duplicate leads and contacts cluttering the CRM", icon: Database },
-  { text: "Inbound leads not assigned quickly or correctly", icon: Users },
-  { text: "Missing contact and company data hurting follow-up", icon: Search },
-  { text: "Manual lead routing wasting time", icon: Zap },
-  { text: "Dashboards that leadership doesn't trust", icon: BarChart3 },
-  { text: "Reports that don't reflect what sales and marketing are actually doing", icon: AlertTriangle },
-  { text: "Lead sources not tracked clearly", icon: TrendingUp },
-  { text: "Sales reps working from incomplete or outdated data", icon: Wrench },
+  { text: "Duplicate leads and contacts causing confusion", icon: Database },
+  { text: "Messy Salesforce data that cannot be trusted", icon: AlertTriangle },
+  { text: "Lead routing that breaks or requires manual work", icon: Zap },
+  { text: "Reports and dashboards that do not reflect reality", icon: BarChart3 },
+  { text: "Marketing and form data not syncing cleanly", icon: Search },
+  { text: "Poor campaign tracking and attribution visibility", icon: TrendingUp },
+  { text: "Salesforce setup that works, but needs cleanup and optimization", icon: Wrench },
+  { text: "Post-implementation issues nobody has time to fix", icon: Users },
 ];
 
 function ProblemsSection() {
@@ -355,11 +401,11 @@ function ProblemsSection() {
 
         <div className="flex justify-center mt-10">
           <a
-            href="#book-a-call"
+            href="#consulting-firms"
             className="inline-flex items-center gap-2 bg-[#F59E0B] hover:bg-[#FBBF24] text-white font-bold text-[16px] px-8 py-3 rounded-lg shadow-md transition-all"
             data-testid="button-problems-cta"
           >
-            Get Your Free Salesforce Review →
+            See Project Support Options →
           </a>
         </div>
       </div>
@@ -370,13 +416,13 @@ function ProblemsSection() {
 const services = [
   {
     title: "Salesforce Data Cleanup & Deduplication",
-    sentence: "Clean up duplicate leads and contacts, normalize fields, standardize naming, and make Salesforce usable again.",
+    sentence: "Clean and normalize Salesforce data so users can trust what they see. Ideal for lead, contact, account, and campaign cleanup projects.",
     bullets: [
-      "Lead deduplication",
-      "Contact deduplication",
-      "Field normalization",
-      "Company cleanup",
-      "Duplicate prevention support",
+      "Duplicate review and cleanup planning",
+      "Field normalization and standardization",
+      "Lead/contact/account cleanup",
+      "CRM cleanup after implementation",
+      "Data quality improvement",
     ],
     icon: Database,
     accentColor: "#1E3A8A",
@@ -384,42 +430,44 @@ const services = [
     gradientTo: "to-[#2563EB]",
   },
   {
-    title: "Automated Lead Routing & Assignment",
-    sentence: "Make sure inbound leads are handled quickly and consistently.",
+    title: "Reporting & Dashboard Builds",
+    sentence: "Create practical Salesforce reports and dashboards that help management see lead flow, pipeline activity, and marketing performance clearly.",
     bullets: [
-      "Assign lead owners by zip code, territory, or rules",
-      "Create vs. update logic",
-      "Rep notifications",
-      "Routing workflows for web forms and imported leads",
+      "Executive dashboards",
+      "Lead and pipeline reporting",
+      "Campaign and funnel reporting",
+      "Conversion visibility",
+      "Reporting cleanup and rebuilds",
     ],
-    icon: Rocket,
+    icon: BarChart3,
     accentColor: "#1E40AF",
     gradientFrom: "from-[#1E40AF]",
     gradientTo: "to-[#1E3A8A]",
   },
   {
-    title: "CRM Data Enrichment with Clay",
-    sentence: "Improve CRM record quality by enhancing missing information and making data more useful for sales and reporting.",
+    title: "Lead Routing & Automation Support",
+    sentence: "Improve lead handling with cleaner routing logic, assignment workflows, automation, and follow-up triggers.",
     bullets: [
-      "Fill in missing contact/company data",
-      "Improve segmentation fields",
-      "Enhance records using Clay",
-      "Strengthen lead quality for follow-up and reporting",
+      "Lead assignment logic",
+      "Routing by geography, source, or segment",
+      "Follow-up workflow automation",
+      "Alerting and task creation",
+      "Lead flow cleanup",
     ],
-    icon: Users,
+    icon: Rocket,
     accentColor: "#2563EB",
     gradientFrom: "from-[#2563EB]",
     gradientTo: "to-[#3B82F6]",
   },
   {
-    title: "Salesforce + Zapier Workflow Automation",
-    sentence: "Automate manual CRM processes so leads move faster and cleaner through the system.",
+    title: "Zapier + Salesforce Integrations",
+    sentence: "Connect forms, lead sources, spreadsheets, and operational tools into Salesforce with cleaner logic and better control.",
     bullets: [
-      "Form to Salesforce automation",
-      "Data transformation before import",
-      "Notification workflows",
-      "Update/insert logic",
-      "Handoff between systems",
+      "Form-to-Salesforce workflows",
+      "Create vs update logic",
+      "Data transformation and cleanup",
+      "Notifications and routing",
+      "Integration troubleshooting",
     ],
     icon: Zap,
     accentColor: "#2563EB",
@@ -427,19 +475,34 @@ const services = [
     gradientTo: "to-[#3B82F6]",
   },
   {
-    title: "Dashboards & CRM Visibility",
-    sentence: "Build clearer dashboards and reports so leadership can trust the numbers again.",
+    title: "Clay Enrichment Workflows",
+    sentence: "Support Clay-based enrichment workflows for company and lead data, especially when paired with Salesforce and Zapier.",
     bullets: [
-      "Lead source dashboards",
-      "Assignment and response tracking",
-      "Conversion reporting",
-      "Sales/marketing visibility",
-      "Performance views for leadership",
+      "Enrichment process design",
+      "Batch or staged enrichment workflows",
+      "Enrichment field mapping",
+      "Data quality tracking",
+      "Enrichment-driven routing support",
     ],
-    icon: BarChart3,
+    icon: Users,
     accentColor: "#1E3A8A",
     gradientFrom: "from-[#2563EB]",
     gradientTo: "to-[#1E3A8A]",
+  },
+  {
+    title: "Post-Implementation Cleanup & Optimization",
+    sentence: "Help after Salesforce has already been implemented but still needs cleanup, stabilization, or practical improvement.",
+    bullets: [
+      "Cleanup after go-live",
+      "Fix incomplete setup work",
+      "Simplify messy processes",
+      "Improve adoption with cleaner workflows",
+      "Stabilize orgs already in use",
+    ],
+    icon: Wrench,
+    accentColor: "#1E3A8A",
+    gradientFrom: "from-[#1E3A8A]",
+    gradientTo: "to-[#2563EB]",
   },
 ];
 
@@ -490,12 +553,26 @@ function ServicesSection() {
 }
 
 const whyDifferent = [
-  "Enterprise background with real-world business experience",
-  "Strong understanding of both Salesforce and marketing/lead flow",
-  "Specialized in CRM data quality and lead automation",
-  "Direct access to the consultant doing the work (no agency layers)",
-  "Practical solutions without agency overhead",
-  "Modern tool stack including Salesforce, Zapier, and Clay",
+  {
+    title: "Practical, Deliverable-Based Work",
+    copy: "Focused on scoped Salesforce projects that can be clearly defined, completed, and handed off cleanly.",
+    icon: Rocket,
+  },
+  {
+    title: "Strong with Cleanup and Stabilization",
+    copy: "Especially useful when an org has already been implemented but still needs cleanup, reporting, automation, or data improvement.",
+    icon: Wrench,
+  },
+  {
+    title: "Comfortable Supporting Existing Teams",
+    copy: "Can work alongside consulting firms, RevOps teams, or internal stakeholders without needing to own the full engagement.",
+    icon: Users,
+  },
+  {
+    title: "Marketing + CRM + Automation Perspective",
+    copy: "Useful for projects involving lead flow, form integrations, campaign tracking, reporting, and Salesforce operational workflows.",
+    icon: Zap,
+  },
 ];
 
 function WhyDifferentSection() {
@@ -506,11 +583,14 @@ function WhyDifferentSection() {
           Why Clients Work With Me
         </h2>
 
-        <div className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-4">
+        <div className="max-w-3xl mx-auto grid sm:grid-cols-2 gap-5">
           {whyDifferent.map((item, i) => (
-            <div key={i} className="flex items-start gap-3 bg-[#EEF4FF] border border-[#DBEAFE] rounded-lg p-4" data-testid={`text-why-${i}`}>
-              <CheckCircle2 className="w-5 h-5 text-[#1E3A8A] mt-0.5 shrink-0" />
-              <span className="text-[15px] text-[#111827] leading-[1.5] font-medium">{item}</span>
+            <div key={i} className="bg-[#EEF4FF] border border-[#DBEAFE] rounded-xl p-6" data-testid={`text-why-${i}`}>
+              <div className="w-10 h-10 rounded-lg bg-[#1E3A8A]/10 flex items-center justify-center mb-3">
+                <item.icon className="w-5 h-5 text-[#1E3A8A]" />
+              </div>
+              <h3 className="text-[16px] font-bold text-[#111827] mb-2">{item.title}</h3>
+              <p className="text-[14px] text-[#6B7280] leading-[1.6]">{item.copy}</p>
             </div>
           ))}
         </div>
@@ -519,13 +599,13 @@ function WhyDifferentSection() {
   );
 }
 
-const zapierClayBullets = [
-  "Automatic lead cleanup before import",
-  "Enrichment of missing fields",
-  "Create vs. update logic",
-  "Assignment workflows",
-  "Notifications",
-  "Cleaner reporting downstream",
+const specializedProjectBullets = [
+  "Data cleanup and CRM normalization",
+  "Reports and dashboards",
+  "Lead routing and assignment support",
+  "Zapier workflow builds and cleanup",
+  "Campaign and funnel tracking",
+  "Post-implementation Salesforce cleanup",
 ];
 
 function ZapierClaySection() {
@@ -533,19 +613,16 @@ function ZapierClaySection() {
     <section className="py-20 sm:py-24 bg-[#F8FAFC]" data-testid="section-zapier-clay">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <h2 className="text-[26px] sm:text-[30px] font-bold text-[#111827] tracking-tight text-center mb-4" data-testid="text-zapier-title">
-          More Than Just Salesforce Configuration
+          Specialized Salesforce Project Support
         </h2>
-        <p className="text-[16px] text-[#6B7280] text-center max-w-2xl mx-auto mb-4 leading-[1.6]">
-          Many CRM problems start before the data even reaches Salesforce. We use tools like Zapier and Clay to help clean, enrich, transform, and route data so your system works better end-to-end.
-        </p>
-        <p className="text-[15px] text-[#6B7280] font-medium text-center max-w-2xl mx-auto mb-12 leading-[1.6]">
-          This allows lead data to be cleaned, enriched, and routed before it even reaches Salesforce.
+        <p className="text-[16px] text-[#6B7280] text-center max-w-2xl mx-auto mb-12 leading-[1.6]">
+          This site is not meant to position Mark as a giant full-service consulting firm. The best fit is specialized Salesforce project work: data cleanup, reporting, lead routing, automation, integrations, and practical optimization that helps existing teams move faster.
         </p>
 
         <div className="max-w-2xl mx-auto grid sm:grid-cols-2 gap-4">
-          {zapierClayBullets.map((item, i) => (
+          {specializedProjectBullets.map((item, i) => (
             <div key={i} className="flex items-start gap-3 p-4 rounded-lg bg-white border border-[#E5E7EB]" data-testid={`text-zapier-${i}`}>
-              <Zap className="w-5 h-5 text-[#F59E0B] mt-0.5 shrink-0" />
+              <CheckCircle2 className="w-5 h-5 text-[#1E3A8A] mt-0.5 shrink-0" />
               <span className="text-[15px] text-[#111827] leading-[1.5]">{item}</span>
             </div>
           ))}
@@ -558,30 +635,30 @@ function ZapierClaySection() {
 const processSteps = [
   {
     step: "1",
-    title: "Tell Me What's Not Working",
+    title: "Review the Scope",
     subtitle: "Start here",
-    description: "Tell us where your Salesforce or lead process is breaking down.",
-    icon: Mail,
-  },
-  {
-    step: "2",
-    title: "We Review & Identify Opportunities",
-    subtitle: "Analysis",
-    description: "We review your current setup, pain points, and priorities.",
+    description: "Quickly assess the problem, desired outcome, and current Salesforce setup.",
     icon: Search,
   },
   {
+    step: "2",
+    title: "Align on the Work",
+    subtitle: "Scoping",
+    description: "Define what needs to be fixed, cleaned up, built, or improved.",
+    icon: Mail,
+  },
+  {
     step: "3",
-    title: "Get a Clear Action Plan",
-    subtitle: "Recommendations",
-    description: "You receive practical recommendations and next steps.",
+    title: "Complete the Project Work",
+    subtitle: "Execution",
+    description: "Handle the agreed cleanup, reporting, automation, routing, or integration tasks.",
     icon: Rocket,
   },
   {
     step: "4",
-    title: "Improve Data, Automation & Reporting",
-    subtitle: "Implementation",
-    description: "If it's a fit, we help implement targeted improvements.",
+    title: "Validate and Hand Off",
+    subtitle: "Delivery",
+    description: "Review the work, confirm it functions as expected, and hand it off cleanly to your team or client.",
     icon: TrendingUp,
   },
 ];
@@ -591,10 +668,10 @@ function ProcessSection() {
     <section id="process" className="py-20 sm:py-24 bg-white" data-testid="section-process">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <h2 className="text-[30px] sm:text-[34px] font-bold text-[#111827] tracking-tight text-center mb-4" data-testid="text-process-title">
-          Simple, Practical Process
+          Simple Project Support Process
         </h2>
         <p className="text-[18px] text-[#6B7280] text-center max-w-xl mx-auto mb-16">
-          Efficient and asynchronous. No heavy onboarding required.
+          Straightforward to engage. No heavy onboarding or long procurement cycles required.
         </p>
 
         <div className="hidden lg:block">
@@ -653,31 +730,24 @@ function ProcessSection() {
 
 const caseStudies = [
   {
-    icon: Database,
-    problem: "Thousands of duplicate leads and contacts cluttering Salesforce.",
-    solution: "Implemented deduplication rules and data normalization.",
-    result: "Cleaner reporting and easier lead management.",
+    icon: Rocket,
+    title: "Lead Routing Cleanup",
+    description: "Improved how inbound leads were assigned by source and geography, reducing manual review and helping the right records reach the right owner faster.",
   },
   {
-    icon: Users,
-    problem: "Inbound leads sitting unassigned, slowing response times.",
-    solution: "Built automated routing by geographic rules with rep notifications.",
-    result: "Faster lead assignment and improved owner visibility.",
+    icon: Database,
+    title: "Salesforce Data Cleanup Project",
+    description: "Cleaned and standardized CRM records to reduce duplicates, improve reporting confidence, and make daily Salesforce use more reliable.",
   },
   {
     icon: BarChart3,
-    problem: "Leadership unable to trust CRM dashboards or reporting.",
-    solution: "Created dashboards showing lead source performance, routing activity, and follow-up trends.",
-    result: "Data-driven decisions with reports leadership actually uses.",
+    title: "Reporting Visibility Project",
+    description: "Built dashboards and reporting views so leadership could better understand lead flow, campaign performance, and pipeline activity.",
   },
 ];
 
 const typicalImprovements = [
-  "Major reduction in duplicate leads and contacts",
-  "Faster assignment of inbound leads",
-  "Cleaner CRM data for reporting and segmentation",
-  "Automated lead routing replacing manual work",
-  "Dashboards leadership can actually trust",
+  "Common project support includes data cleanup, reporting, automation, lead flow improvements, and post-implementation Salesforce optimization.",
 ];
 
 function CaseStudiesSection() {
@@ -691,7 +761,7 @@ function CaseStudiesSection() {
           Representative outcomes from real client engagements.
         </p>
 
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {caseStudies.map((study, i) => (
             <div
               key={i}
@@ -702,41 +772,18 @@ function CaseStudiesSection() {
               <div className="w-10 h-10 rounded-full bg-[#1E3A8A]/10 flex items-center justify-center mb-4">
                 <study.icon className="w-5 h-5 text-[#1E3A8A]" />
               </div>
-              <div className="space-y-3">
-                <div>
-                  <span className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#DC2626]">Problem</span>
-                  <p className="text-[14px] text-[#111827] leading-[1.5] mt-1">{study.problem}</p>
-                </div>
-                <div>
-                  <span className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#2563EB]">Solution</span>
-                  <p className="text-[14px] text-[#6B7280] leading-[1.5] mt-1">{study.solution}</p>
-                </div>
-                <div>
-                  <span className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#16A34A]">Result</span>
-                  <p className="text-[14px] text-[#111827] font-medium leading-[1.5] mt-1">{study.result}</p>
-                </div>
-              </div>
+              <h3 className="text-[16px] font-bold text-[#111827] mb-3">{study.title}</h3>
+              <p className="text-[14px] text-[#6B7280] leading-[1.6]">{study.description}</p>
             </div>
           ))}
         </div>
 
         <div
-          className="max-w-xl mx-auto rounded-xl bg-white border border-[#DBEAFE] p-8 sm:p-10 relative overflow-hidden"
-          style={{ boxShadow: "0 4px 6px -1px rgba(30,58,138,0.08), 0 10px 30px -5px rgba(30,58,138,0.12)" }}
+          className="max-w-2xl mx-auto rounded-xl bg-[#EEF4FF] border border-[#DBEAFE] p-6 sm:p-8"
         >
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#1E3A8A] to-[#2563EB]" />
-          <div className="flex items-center justify-center gap-2 mb-6">
-            <TrendingUp className="w-6 h-6 text-[#1E3A8A]" />
-            <h3 className="text-[20px] font-bold text-[#111827]">Typical Improvements Clients See</h3>
-          </div>
-          <div className="space-y-4">
-            {typicalImprovements.map((item, i) => (
-              <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-[#F8FAFC] border border-[#E5E7EB]/60" data-testid={`text-improvement-${i}`}>
-                <CheckCircle2 className="w-5 h-5 text-[#16A34A] mt-0.5 shrink-0" />
-                <span className="text-[15px] text-[#111827] leading-[1.5] font-medium">{item}</span>
-              </div>
-            ))}
-          </div>
+          <p className="text-[15px] text-[#1E3A8A] font-medium leading-[1.6] text-center" data-testid="text-improvement-0">
+            {typicalImprovements[0]}
+          </p>
         </div>
       </div>
     </section>
@@ -772,11 +819,11 @@ function AboutSection() {
             />
             <div>
               <p className="text-[18px] text-[#111827] leading-[1.6] mb-5">
-                I combine enterprise technology experience, digital marketing systems knowledge, and hands-on CRM automation skills to help companies get more value from Salesforce.
+                Mark works at the intersection of Salesforce, marketing systems, data quality, automation, and reporting. He specializes in practical Salesforce project work including data cleanup, lead routing, reporting dashboards, Zapier integrations, campaign tracking, and CRM optimization.
               </p>
 
               <p className="text-[15px] text-[#6B7280] leading-[1.6] mb-5">
-                In addition to Salesforce expertise, I bring decades of experience in digital marketing, CRM strategy, and automation.
+                He is a strong fit for consulting firms, RevOps teams, and companies that need targeted Salesforce help without a large full-service engagement. Available for project-based, contract, and overflow Salesforce work.
               </p>
 
               <ul className="space-y-2.5 mb-5">
@@ -839,191 +886,90 @@ function AboutSection() {
 
 const faqItems = [
   {
-    question: "Do you only work with Salesforce?",
-    answer: "I primarily help companies improve Salesforce, especially around data quality, lead flow, automation, and reporting.",
+    question: "Do you work with Salesforce consulting firms or agencies?",
+    answer: "Yes. Mark is available for subcontract, overflow, and project-based support, especially for cleanup, reporting, automation, and Salesforce optimization work.",
   },
   {
-    question: "Do you work with Zapier and Clay?",
-    answer: "Yes. I often use Zapier for automation and Clay for data cleanup and enrichment where appropriate.",
+    question: "Do you only work with direct clients?",
+    answer: "No. The site supports both direct companies and consulting firms that need specialized Salesforce project help.",
   },
   {
-    question: "Do I need to give you Salesforce access right away?",
-    answer: "No. Initial reviews can begin with your description of the issues, screenshots, or a discussion of your process.",
+    question: "What types of Salesforce work are the best fit?",
+    answer: "Best-fit work includes data cleanup, deduplication planning, dashboards and reporting, lead routing, Zapier integrations, campaign tracking, and post-implementation cleanup.",
   },
   {
-    question: "Are you a good fit for brand new Salesforce implementations?",
-    answer: "Usually I'm a better fit for companies that already use Salesforce and need optimization, cleanup, automation, or improved reporting.",
+    question: "Do you handle full Salesforce implementations?",
+    answer: "The strongest fit is specialized project support and optimization work rather than large end-to-end implementations.",
   },
   {
-    question: "Do you do ongoing support?",
-    answer: "Yes, for the right clients I can provide ongoing optimization and improvement support.",
+    question: "Can you support work after a Salesforce go-live or implementation?",
+    answer: "Yes. Cleanup, stabilization, reporting improvements, lead-flow fixes, and practical follow-through after implementation are a strong fit.",
   },
 ];
 
 function PricingSection() {
   const cards = [
     {
-      badge: "Start here",
-      badgeColor: "bg-[#F1F5FF] text-[#1E3A8A]",
-      title: "Salesforce Audit",
-      price: "$1,500",
-      priceSub: "one-time · delivered in 5 business days",
-      quote: '"I know something\'s wrong — I just don\'t know where to start."',
-      body: "Before you fix anything, you need to know what's actually broken. This audit gives you a complete picture of your Salesforce org — data quality issues, automation gaps, reporting blind spots, and a prioritized action plan so you know exactly what to tackle first.",
-      bullets: [
-        "Full org health assessment",
-        "Data quality & hygiene report",
-        "Automation & flow gap analysis",
-        "Dashboard & reporting review",
-        "Written recommendations doc",
-        "1-hr debrief call with Mark",
-      ],
-      cta: "Get your audit →",
-      featured: false,
+      title: "Cleanup Projects",
+      badge: "Data & CRM",
+      body: "Examples: deduplication planning, field cleanup, CRM normalization, Salesforce cleanup after implementation.",
+      note: "Typically scoped based on record volume, complexity, and review needs.",
+      icon: Database,
     },
     {
-      badge: "Most popular",
-      badgeColor: "bg-[#DBEAFE] text-[#1E3A8A]",
-      title: "Implementation Project",
-      price: "$3,500 –",
-      priceSecond: "$8,500",
-      priceSub: "fixed-price · scoped per project",
-      quote: '"We know what we need — we just need someone to build it right."',
-      body: "A focused, fixed-price engagement to solve a specific Salesforce problem — data cleanup, lead flow automation, dashboard buildout, or Marketing Cloud setup. You get a defined scope, a clear timeline, and a finished deliverable. No hourly billing surprises.",
-      bullets: [
-        "Discovery & scoping call",
-        "Full build & configuration",
-        "Testing & QA",
-        "Team training session",
-        "Documentation handoff",
-        "30 days of post-launch support",
-      ],
-      cta: "Start a project →",
-      featured: true,
+      title: "Reporting & Dashboard Projects",
+      badge: "Reporting",
+      body: "Examples: management dashboards, lead flow visibility, campaign reporting, conversion reports, pipeline reporting.",
+      note: "Typically scoped based on reporting requirements and dashboard depth.",
+      icon: BarChart3,
     },
     {
-      badge: "Best long-term value",
-      badgeColor: "bg-[#DCFCE7] text-[#166534]",
-      title: "Monthly Retainer",
-      price: "$2,000 –",
-      priceSecond: "$4,000",
-      priceSub: "/month · 3-month minimum",
-      quote: '"We need ongoing Salesforce support without hiring a full-time admin."',
-      body: "Your dedicated Salesforce expert — without the overhead of a full-time hire. I handle ongoing admin, reporting, and optimization so your team can focus on selling and growing. Scope adjusts monthly based on what you need.",
-      bullets: [
-        "Up to 20 hrs/month",
-        "Reports & dashboard updates",
-        "User support & fixes",
-        "Monthly strategy call",
-        "Agentforce & AI feature rollouts",
-        "Priority response (within 4 hrs)",
-      ],
-      cta: "Let's talk →",
-      featured: false,
+      title: "Automation & Integration Projects",
+      badge: "Automation",
+      body: "Examples: lead routing logic, Zapier workflows, form integrations, enrichment workflows, task automation.",
+      note: "Typically scoped based on number of systems, workflow complexity, and business rules.",
+      icon: Zap,
     },
   ];
 
   return (
     <section id="pricing" className="py-20 sm:py-24 bg-white" data-testid="section-pricing">
-      <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        {/* Header */}
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-[28px] sm:text-[36px] font-bold text-[#111827] tracking-tight mb-4" data-testid="text-pricing-title">
-            Simple, Transparent Pricing
+          <h2 className="text-[28px] sm:text-[34px] font-bold text-[#111827] tracking-tight mb-4" data-testid="text-pricing-title">
+            Typical Salesforce Project Types
           </h2>
-          <p className="text-[16px] sm:text-[17px] text-[#4B5563] leading-relaxed">
-            No surprise invoices. No scope creep. Every engagement starts with a clear scope, a fixed price, and a defined outcome — so you always know exactly what you're getting.
+          <p className="text-[16px] text-[#4B5563] leading-relaxed">
+            Most projects fall into one of these categories. Each is scoped individually based on your specific situation.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {cards.map((card, i) => (
             <div
               key={i}
               data-testid={`card-pricing-${i}`}
-              className={`relative flex flex-col rounded-2xl border p-7 transition-shadow ${
-                card.featured
-                  ? "bg-[#1E3A8A] border-[#1E3A8A] shadow-2xl scale-[1.03] z-10"
-                  : "bg-white border-gray-200 shadow-sm hover:shadow-md"
-              }`}
+              className="relative flex flex-col rounded-xl border border-[#E5E7EB] bg-white p-7 shadow-sm hover:shadow-md transition-shadow"
             >
-              {/* Badge */}
-              <span
-                className={`inline-block self-start text-[12px] font-semibold px-3 py-1 rounded-full mb-4 ${
-                  card.featured ? "bg-white/20 text-white" : card.badgeColor
-                }`}
-                data-testid={`badge-pricing-${i}`}
-              >
-                {card.badge}
-              </span>
-
-              {/* Title */}
-              <h3 className={`text-[20px] font-bold mb-3 ${card.featured ? "text-white" : "text-[#111827]"}`}>
-                {card.title}
-              </h3>
-
-              {/* Price */}
-              <div className="mb-1">
-                <span className={`text-[38px] font-extrabold leading-none ${card.featured ? "text-white" : "text-[#111827]"}`}>
-                  {card.price}
-                </span>
-                {card.priceSecond && (
-                  <span className={`text-[38px] font-extrabold leading-none block ${card.featured ? "text-white" : "text-[#111827]"}`}>
-                    {card.priceSecond}
-                  </span>
-                )}
+              <div className="w-10 h-10 rounded-lg bg-[#EEF4FF] flex items-center justify-center mb-4">
+                <card.icon className="w-5 h-5 text-[#1E3A8A]" />
               </div>
-              <p className={`text-[13px] mb-4 ${card.featured ? "text-blue-200" : "text-[#6B7280]"}`}>
-                {card.priceSub}
-              </p>
-
-              {/* Quote */}
-              <blockquote className={`italic text-[14px] leading-snug border-l-4 pl-3 mb-4 ${
-                card.featured ? "border-white/40 text-blue-100" : "border-[#1E3A8A]/30 text-[#4B5563]"
-              }`}>
-                {card.quote}
-              </blockquote>
-
-              {/* Body */}
-              <p className={`text-[14px] leading-relaxed mb-5 ${card.featured ? "text-blue-100" : "text-[#4B5563]"}`}>
-                {card.body}
-              </p>
-
-              {/* Bullets */}
-              <ul className="space-y-2 mb-8 flex-1">
-                {card.bullets.map((b, j) => (
-                  <li key={j} className={`flex items-start gap-2 text-[14px] ${card.featured ? "text-blue-100" : "text-[#374151]"}`}>
-                    <span className={`mt-0.5 font-bold ${card.featured ? "text-[#F59E0B]" : "text-[#1E3A8A]"}`}>✓</span>
-                    {b}
-                  </li>
-                ))}
-              </ul>
-
-              {/* CTA */}
-              <a
-                href="#book-a-call"
-                data-testid={`link-pricing-cta-${i}`}
-                className={`block text-center rounded-xl py-3 px-6 font-semibold text-[15px] transition-all ${
-                  card.featured
-                    ? "bg-[#F59E0B] text-white hover:bg-[#FBBF24] shadow-lg"
-                    : "bg-white border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-[#F1F5FF]"
-                }`}
-              >
-                {card.cta}
-              </a>
+              <span className="text-[11px] font-bold uppercase tracking-[0.1em] text-[#2563EB] mb-2">{card.badge}</span>
+              <h3 className="text-[18px] font-bold text-[#111827] mb-3">{card.title}</h3>
+              <p className="text-[14px] text-[#4B5563] leading-relaxed mb-4 flex-1">{card.body}</p>
+              <p className="text-[13px] text-[#6B7280] italic border-t border-[#F3F4F6] pt-3">{card.note}</p>
             </div>
           ))}
         </div>
 
-        {/* Footer note */}
-        <p className="text-center text-[14px] text-[#6B7280] mt-10">
-          Not sure which fits?{" "}
-          <a href="#book-a-call" className="text-[#1E3A8A] font-semibold hover:underline" data-testid="link-pricing-footer-cta">
-            Start with the free optimization review
-          </a>{" "}
-          — it takes 30 minutes and you'll leave knowing exactly what your Salesforce org needs.
-        </p>
+        <div className="text-center">
+          <p className="text-[14px] text-[#6B7280]">
+            Project pricing is scoped case by case.{" "}
+            <a href="#book-a-call" className="text-[#1E3A8A] font-semibold hover:underline" data-testid="link-pricing-footer-cta">
+              Contract and overflow support for consulting firms is also available.
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
@@ -1135,10 +1081,10 @@ function BookACallSection() {
       <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-[24px] sm:text-[28px] font-bold text-[#111827] tracking-tight text-center mb-3" data-testid="text-book-title">
-            Free Salesforce Optimization Review
+            Discuss a Salesforce Project or Support Need
           </h2>
-          <p className="text-[16px] text-[#6B7280] text-center leading-[1.6] mb-10 max-w-md mx-auto">
-            Tell us what's not working in your Salesforce setup, lead process, or reporting. We'll review your situation and respond with practical next steps. No hard sell.
+          <p className="text-[16px] text-[#6B7280] text-center leading-[1.6] mb-10 max-w-lg mx-auto">
+            Need help with Salesforce cleanup, reporting, lead routing, automation, or project support? Use the form below to reach out. Direct company projects and consulting firm / agency support requests are both welcome.
           </p>
 
           <div className="bg-white rounded-md border border-[#E5E7EB] p-6 sm:p-8 shadow-sm">
@@ -1203,13 +1149,40 @@ function BookACallSection() {
 
                 <FormField
                   control={form.control}
+                  name="requestType"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel className="text-[14px] font-medium text-[#111827]">I'm reaching out about</FormLabel>
+                      <Select onValueChange={field.onChange} value={field.value || ""}>
+                        <FormControl>
+                          <SelectTrigger className="border-[#E5E7EB]" data-testid="select-inquiry-type">
+                            <SelectValue placeholder="Select inquiry type" />
+                          </SelectTrigger>
+                        </FormControl>
+                        <SelectContent>
+                          <SelectItem value="Direct company project">Direct company project</SelectItem>
+                          <SelectItem value="Consulting firm / agency support">Consulting firm / agency support</SelectItem>
+                          <SelectItem value="Reporting / dashboard project">Reporting / dashboard project</SelectItem>
+                          <SelectItem value="Data cleanup / deduplication">Data cleanup / deduplication</SelectItem>
+                          <SelectItem value="Lead routing / automation">Lead routing / automation</SelectItem>
+                          <SelectItem value="Zapier / integration work">Zapier / integration work</SelectItem>
+                          <SelectItem value="General project inquiry">General project inquiry</SelectItem>
+                        </SelectContent>
+                      </Select>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
                   name="notes"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="text-[14px] font-medium text-[#111827]">Current Salesforce challenge *</FormLabel>
+                      <FormLabel className="text-[14px] font-medium text-[#111827]">Describe your Salesforce project or need *</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="e.g., Our reports don't match reality, leads aren't getting routed correctly, data is a mess..."
+                          placeholder="e.g., We need help cleaning up duplicate records, building dashboards, fixing lead routing..."
                           className="border-[#E5E7EB] min-h-[100px]"
                           {...field}
                           value={field.value || ""}
@@ -1222,7 +1195,7 @@ function BookACallSection() {
                 />
 
                 <p className="text-[13px] text-[#6B7280] text-center leading-[1.5]">
-                  No risk or obligation. Just practical feedback on your Salesforce setup.
+                  No obligation. Direct company projects and consulting firm support requests are both welcome.
                 </p>
 
                 <Button
@@ -1231,7 +1204,7 @@ function BookACallSection() {
                   disabled={mutation.isPending}
                   data-testid="button-submit-booking"
                 >
-                  {mutation.isPending ? "Sending..." : "Request My Free Review"}
+                  {mutation.isPending ? "Sending..." : "Send Project Inquiry"}
                 </Button>
 
                 <p className="text-center text-[13px] text-[#6B7280] mt-2" data-testid="text-reply-time">
@@ -1254,7 +1227,7 @@ function Footer() {
           <div className="flex flex-col items-center sm:items-start gap-3">
             <img src={logoImg} alt="Salesforce Mark — Independent Salesforce Consultant" className="h-[80px] md:h-[100px] w-auto" data-testid="img-footer-logo" />
             <p className="text-[14px] text-[#9CA3AF] leading-[1.6] max-w-[260px] text-center sm:text-left">
-              Independent Salesforce consultant focused on CRM data quality, lead automation, and reporting.
+              Salesforce project support for cleanup, reporting, automation, integrations, and optimization.
             </p>
           </div>
 
@@ -1317,6 +1290,7 @@ export default function Home() {
     <div className="min-h-screen bg-white overflow-x-hidden">
       <Navbar />
       <HeroSection />
+      <ConsultingFirmsSection />
       <WhoWeHelpSection />
       <ProblemsSection />
       <ServicesSection />

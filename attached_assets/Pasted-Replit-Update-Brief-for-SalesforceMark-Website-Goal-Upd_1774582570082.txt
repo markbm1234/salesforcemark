@@ -1,0 +1,509 @@
+Replit Update Brief for SalesforceMark Website
+Goal
+
+Update the existing site so it still works for direct companies, but is more strongly positioned for Salesforce consulting firms, RevOps agencies, and marketing agencies that may want to hire Mark for subcontract, overflow, or project-based work.
+
+Do not redesign the site.
+Do not change colors, branding, layout style, spacing system, fonts, images, or overall page structure unless specifically noted below.
+This is a messaging and positioning update, not a rebuild.
+
+Keep the site polished, clean, and conversion-oriented.
+
+Overall Positioning Shift
+
+The site should position Mark as a specialist resource for:
+
+Salesforce data cleanup
+deduplication
+reporting/dashboard work
+lead routing and automation
+Zapier integrations
+Clay enrichment workflows
+campaign/funnel tracking
+post-implementation cleanup
+Salesforce optimization projects
+
+The site should make consulting firms think:
+
+“We can bring this guy into our projects.”
+
+without scaring off direct companies.
+
+Core Messaging Rules
+Keep
+practical tone
+expert but approachable feel
+trust-building language
+outcome-focused messaging
+Change
+
+Move away from language that makes Mark look like a full-service boutique firm competing for entire client engagements.
+
+Move toward language that makes Mark look like a specialized project partner.
+
+Use phrases like:
+
+project-based support
+contract support
+overflow project work
+subcontract support
+specialized Salesforce help
+consulting firm support
+RevOps team support
+implementation cleanup
+reporting, automation, and data projects
+
+Avoid overusing phrases like:
+
+digital transformation
+end-to-end implementation partner
+strategic CRM consulting firm
+full-service Salesforce consultancy
+Exact Page Changes
+1. Hero Section
+Replace the current hero headline and supporting copy.
+New Hero Headline
+
+Salesforce Data Cleanup, Lead Automation, and Reporting Support
+
+New Hero Subheadline
+
+I help Salesforce consulting firms, RevOps teams, and growing companies clean up messy data, automate lead flow, improve reporting, and stabilize Salesforce after implementation.
+
+Add short supporting bullets below the subheadline
+
+Use 4 bullets:
+
+Available for project-based and subcontract Salesforce work
+Data cleanup, deduplication, and CRM normalization
+Lead routing, automation, reporting, and integrations
+Zapier and Clay workflow support
+Primary CTA button
+
+Change current hero CTA to:
+
+Discuss a Project
+
+Secondary CTA
+
+Add a secondary text/button link next to it:
+
+For Consulting Firms
+
+This should scroll to the new consulting-firm support section further down the page.
+
+2. Add New Section Directly Below Hero
+
+Insert a new section immediately below the hero and before the existing “Who We Work Best With” section.
+
+Section Title
+
+Support for Consulting Firms, Agencies, and Internal Teams
+
+Section Intro Copy
+
+I frequently support Salesforce consulting firms, RevOps teams, and marketing agencies with specialized project work. This includes data cleanup, reporting builds, lead routing logic, Salesforce optimization, Zapier integrations, and post-implementation cleanup.
+
+Create 3 cards in this section
+Card 1 Title
+
+Consulting Firms
+
+Card 1 Copy
+
+Need help delivering part of a Salesforce project? I can support data cleanup, dashboards, automation, lead flow, and org optimization work as a subcontract or overflow resource.
+
+Card 2 Title
+
+RevOps / Marketing Ops Teams
+
+Card 2 Copy
+
+I help internal teams improve lead management, routing, reporting visibility, campaign tracking, and Salesforce data quality without requiring a full rebuild.
+
+Card 3 Title
+
+Direct Companies
+
+Card 3 Copy
+
+If your company finds me directly, I also take on targeted Salesforce projects involving cleanup, automation, reporting, and marketing-to-Salesforce workflow improvements.
+
+Add a small note below the cards:
+Best fit: scoped projects, cleanup work, reporting/dashboard builds, automation projects, and Salesforce stabilization work.
+
+3. Update “Who We Work Best With” Section
+
+Keep the section, but update the content so it includes consulting firms and internal teams more clearly.
+
+Replace the current cards with these 3 groups:
+Card 1
+
+Salesforce Consulting Firms
+Overflow project work, subcontract support, cleanup tasks, dashboard/reporting builds, automation support, and implementation follow-through.
+
+Card 2
+
+Internal RevOps / Marketing Ops Teams
+Support for lead routing, CRM data cleanup, reporting visibility, campaign tracking, and operational automation.
+
+Card 3
+
+Growing Companies with Messy Salesforce Setups
+Best for companies needing cleanup, process improvement, practical automation, and better reporting without a massive consulting engagement.
+
+4. Update “Common Salesforce Problems We Help Fix”
+
+Keep the visual structure, but update the text in the problem tiles to focus more on the actual niche.
+
+Use problem statements like:
+
+Duplicate leads and contacts causing confusion
+Messy Salesforce data that cannot be trusted
+Lead routing that breaks or requires manual work
+Reports and dashboards that do not reflect reality
+Marketing and form data not syncing cleanly
+Poor campaign tracking and attribution visibility
+Salesforce setup that works, but needs cleanup and optimization
+Post-implementation issues nobody has time to fix
+
+Update the CTA under this section to:
+
+See Project Support Options
+
+5. Update “Specialized Salesforce Services” Section
+
+This is one of the most important changes.
+
+Keep the service-card layout, but replace the current service offerings with the following exact service categories.
+
+Service Card 1
+
+Salesforce Data Cleanup & Deduplication
+Clean and normalize Salesforce data so users can trust what they see. Ideal for lead, contact, account, and campaign cleanup projects.
+
+Bullets:
+
+Duplicate review and cleanup planning
+Field normalization and standardization
+Lead/contact/account cleanup
+CRM cleanup after implementation
+Data quality improvement
+Service Card 2
+
+Reporting & Dashboard Builds
+Create practical Salesforce reports and dashboards that help management see lead flow, pipeline activity, and marketing performance clearly.
+
+Bullets:
+
+Executive dashboards
+Lead and pipeline reporting
+Campaign and funnel reporting
+Conversion visibility
+Reporting cleanup and rebuilds
+Service Card 3
+
+Lead Routing & Automation Support
+Improve lead handling with cleaner routing logic, assignment workflows, automation, and follow-up triggers.
+
+Bullets:
+
+Lead assignment logic
+Routing by geography, source, or segment
+Follow-up workflow automation
+Alerting and task creation
+Lead flow cleanup
+Service Card 4
+
+Zapier + Salesforce Integrations
+Connect forms, lead sources, spreadsheets, and operational tools into Salesforce with cleaner logic and better control.
+
+Bullets:
+
+Form-to-Salesforce workflows
+Create vs update logic
+Data transformation and cleanup
+Notifications and routing
+Integration troubleshooting
+Service Card 5
+
+Clay Enrichment Workflows
+Support Clay-based enrichment workflows for company and lead data, especially when paired with Salesforce and Zapier.
+
+Bullets:
+
+Enrichment process design
+Batch or staged enrichment workflows
+Enrichment field mapping
+Data quality tracking
+Enrichment-driven routing support
+Service Card 6
+
+Post-Implementation Cleanup & Optimization
+Help after Salesforce has already been implemented but still needs cleanup, stabilization, or practical improvement.
+
+Bullets:
+
+Cleanup after go-live
+Fix incomplete setup work
+Simplify messy processes
+Improve adoption with cleaner workflows
+Stabilize orgs already in use
+
+If the current section only supports 5 cards, use all except Clay as a separate card and fold Clay into Zapier + Salesforce Integrations. But if 6 cards fit cleanly, use 6.
+
+6. Update “Why Clients Work With Me”
+
+Keep this section but revise the copy so it is more relevant to consulting firms and scoped projects.
+
+Use these 4 value points:
+
+Card 1
+
+Practical, Deliverable-Based Work
+Focused on scoped Salesforce projects that can be clearly defined, completed, and handed off cleanly.
+
+Card 2
+
+Strong with Cleanup and Stabilization
+Especially useful when an org has already been implemented but still needs cleanup, reporting, automation, or data improvement.
+
+Card 3
+
+Comfortable Supporting Existing Teams
+Can work alongside consulting firms, RevOps teams, or internal stakeholders without needing to own the full engagement.
+
+Card 4
+
+Marketing + CRM + Automation Perspective
+Useful for projects involving lead flow, form integrations, campaign tracking, reporting, and Salesforce operational workflows.
+
+7. Replace “More Than Just Salesforce Configuration” Section
+
+Retain the section placement, but rewrite the content to reinforce niche specialization.
+
+New Section Title
+
+Specialized Salesforce Project Support
+
+New Paragraph
+
+This site is not meant to position Mark as a giant full-service consulting firm. The best fit is specialized Salesforce project work: data cleanup, reporting, lead routing, automation, integrations, and practical optimization that helps existing teams move faster.
+
+Add 6 supporting bullets:
+Data cleanup and CRM normalization
+Reports and dashboards
+Lead routing and assignment support
+Zapier workflow builds and cleanup
+Campaign and funnel tracking
+Post-implementation Salesforce cleanup
+8. Update the Process Section
+
+Keep the existing simple process layout, but revise the wording to sound easier for consulting firms to engage.
+
+New Process Title
+
+Simple Project Support Process
+
+4 Steps
+Step 1
+
+Review the Scope
+Quickly assess the problem, desired outcome, and current Salesforce setup.
+
+Step 2
+
+Align on the Work
+Define what needs to be fixed, cleaned up, built, or improved.
+
+Step 3
+
+Complete the Project Work
+Handle the agreed cleanup, reporting, automation, routing, or integration tasks.
+
+Step 4
+
+Validate and Hand Off
+Review the work, confirm it functions as expected, and hand it off cleanly to your team or client.
+
+9. Replace the Pricing Section
+
+This is a major change.
+
+Do not remove the section entirely, but stop presenting it like retail package pricing.
+
+Change section title from pricing language to:
+
+Typical Salesforce Project Types
+
+Replace package/pricing framing with 3 cards:
+Card 1
+
+Cleanup Projects
+Examples: deduplication planning, field cleanup, CRM normalization, Salesforce cleanup after implementation.
+
+Add note:
+Typically scoped based on record volume, complexity, and review needs.
+
+Card 2
+
+Reporting & Dashboard Projects
+Examples: management dashboards, lead flow visibility, campaign reporting, conversion reports, pipeline reporting.
+
+Add note:
+Typically scoped based on reporting requirements and dashboard depth.
+
+Card 3
+
+Automation & Integration Projects
+Examples: lead routing logic, Zapier workflows, form integrations, enrichment workflows, task automation.
+
+Add note:
+Typically scoped based on number of systems, workflow complexity, and business rules.
+
+Add small text below cards:
+Project pricing is scoped case by case. Contract and overflow support for consulting firms is also available.
+
+Do not show fixed dollar pricing.
+
+10. Update “Examples of Problems We Help Solve”
+
+Keep this section but convert it into more consulting-style mini case studies.
+
+Use 3 example cards:
+
+Example 1
+
+Lead Routing Cleanup
+Improved how inbound leads were assigned by source and geography, reducing manual review and helping the right records reach the right owner faster.
+
+Example 2
+
+Salesforce Data Cleanup Project
+Cleaned and standardized CRM records to reduce duplicates, improve reporting confidence, and make daily Salesforce use more reliable.
+
+Example 3
+
+Reporting Visibility Project
+Built dashboards and reporting views so leadership could better understand lead flow, campaign performance, and pipeline activity.
+
+Under those cards, add a small highlighted box:
+Common project support includes data cleanup, reporting, automation, lead flow improvements, and post-implementation Salesforce optimization.
+
+11. Update the “Meet Mark” / About Section
+
+Keep photo and social proof elements. Revise the copy so it is more aligned to contract/project work.
+
+New About Copy
+
+Mark works at the intersection of Salesforce, marketing systems, data quality, automation, and reporting. He specializes in practical Salesforce project work including data cleanup, lead routing, reporting dashboards, Zapier integrations, campaign tracking, and CRM optimization. He is a strong fit for consulting firms, RevOps teams, and companies that need targeted Salesforce help without a large full-service engagement.
+
+Add a short supporting line:
+Available for project-based, contract, and overflow Salesforce work.
+
+12. Update FAQ Section
+
+Replace or rewrite FAQ items to include consulting-firm relevance.
+
+Use these FAQ questions and answers:
+
+FAQ 1
+
+Do you work with Salesforce consulting firms or agencies?
+Yes. Mark is available for subcontract, overflow, and project-based support, especially for cleanup, reporting, automation, and Salesforce optimization work.
+
+FAQ 2
+
+Do you only work with direct clients?
+No. The site supports both direct companies and consulting firms that need specialized Salesforce project help.
+
+FAQ 3
+
+What types of Salesforce work are the best fit?
+Best-fit work includes data cleanup, deduplication planning, dashboards and reporting, lead routing, Zapier integrations, campaign tracking, and post-implementation cleanup.
+
+FAQ 4
+
+Do you handle full Salesforce implementations?
+The strongest fit is specialized project support and optimization work rather than large end-to-end implementations.
+
+FAQ 5
+
+Can you support work after a Salesforce go-live or implementation?
+Yes. Cleanup, stabilization, reporting improvements, lead-flow fixes, and practical follow-through after implementation are a strong fit.
+
+13. Update Bottom Contact Form Section
+
+This section needs to support both direct clients and consulting firms.
+
+New Section Title
+
+Discuss a Salesforce Project or Support Need
+
+New Intro Copy
+
+Need help with Salesforce cleanup, reporting, lead routing, automation, or project support? Use the form below to reach out. Direct company projects and consulting firm / agency support requests are both welcome.
+
+Add/Update Form Fields
+
+Keep existing fields, but add one dropdown field:
+
+I’m reaching out about:
+
+Direct company project
+Consulting firm / agency support
+Reporting / dashboard project
+Data cleanup / deduplication
+Lead routing / automation
+Zapier / integration work
+General project inquiry
+
+Keep the submit button text:
+Send Project Inquiry
+
+14. Footer
+
+In the footer, add a short one-line positioning statement:
+Salesforce project support for cleanup, reporting, automation, integrations, and optimization.
+
+Visual / UX Instructions
+Keep current design system
+Keep current colors
+Keep current headshots and imagery
+Keep cards and spacing style
+Keep CTA style consistent
+Do not make the site feel busier
+Do not add flashy animations
+Do not add SEO/blog elements
+Do not make the site look like it is aggressively marketing to the public
+The site should feel professional, selective, and useful to firms and teams
+Important Copy Direction
+
+Throughout the site, emphasize these themes:
+
+scoped work
+project support
+specialized help
+cleanup and stabilization
+reporting and automation
+easy to plug into an existing team
+consulting firm support
+direct companies still welcome
+
+Avoid making the site sound like:
+
+a giant consulting company
+a public lead-gen site
+a generic Salesforce admin-for-hire page
+Final Deliverable
+
+Update the homepage copy and section content according to the instructions above while preserving the current design style and structure as much as possible.
+
+Do not rebuild the site from scratch.
+Do not remove existing credibility elements.
+Do not overcomplicate the design.
+The result should feel like the same site, but repositioned to attract:
+
+Salesforce consulting firms
+RevOps / marketing ops teams
+direct companies with targeted Salesforce project needs
