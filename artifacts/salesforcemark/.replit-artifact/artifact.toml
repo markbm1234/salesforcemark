@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Salesforce Mark"
+version = "1.0.0"
+id = "artifacts/salesforcemark"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23842
+
+[services.development]
+run = "pnpm --filter @workspace/salesforcemark run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/salesforcemark", "run", "build" ]
+publicDir = "artifacts/salesforcemark/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23842"
+BASE_PATH = "/"

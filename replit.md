@@ -91,6 +91,20 @@ Generated Zod schemas from the OpenAPI spec (e.g. `HealthCheckResponse`). Used b
 
 Generated React Query hooks and fetch client from the OpenAPI spec (e.g. `useHealthCheck`, `healthCheck`).
 
+### `artifacts/salesforcemark` (`@workspace/salesforcemark`)
+
+React + Vite frontend for the salesforcemark.com consultancy site (Mark Mathis – Salesforce Optimization).
+
+- Serves at previewPath `/` (root)
+- Two pages: `/` (main landing page) and `/salesforce-optimization-guide` (bridge/lead-gen page)
+- Forms post to `POST /api/bookings` on the API server
+- Image assets live in `attached_assets/` — the backup images are NOT included; add originals using the filenames referenced in `src/pages/home.tsx` and `src/pages/bridge.tsx`
+- MailerLite integration is in the API server (`MAILERLITE_API_KEY` + `MAILERLITE_GROUP_ID` env vars)
+- `src/pages/home.tsx` — main 1300-line landing page (restored from backup)
+- `src/pages/bridge.tsx` — alternate lead-gen/opt-in page (restored from backup)
+- `src/lib/queryClient.ts` — React Query client + `apiRequest` helper
+- `vite.config.ts` — sets `@assets` alias → `attached_assets/`, `@/` → `src/`
+
 ### `scripts` (`@workspace/scripts`)
 
 Utility scripts package. Each script is a `.ts` file in `src/` with a corresponding npm script in `package.json`. Run scripts via `pnpm --filter @workspace/scripts run <script>`. Scripts can import any workspace package (e.g., `@workspace/db`) by adding it as a dependency in `scripts/package.json`.

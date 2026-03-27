@@ -5,9 +5,6 @@
  * API specification
  * OpenAPI spec version: 0.1.0
  */
-export interface HealthStatus {
-  status: string;
-}
 
 export interface CreateBookingBody {
   /** @minLength 1 */
@@ -27,14 +24,4 @@ export interface CreateBookingBody {
   notes: string;
   /** @nullable */
   website?: string | null;
-}
-
-export interface BookingResponse {
-  success: boolean;
-  id: number;
-  message: string;
-}
-
-export interface ErrorResponse {
-  message: string;
 }

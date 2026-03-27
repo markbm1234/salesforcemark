@@ -14,3 +14,31 @@ import * as zod from "zod";
 export const HealthCheckResponse = zod.object({
   status: zod.string(),
 });
+
+/**
+ * Submit a Salesforce optimization review request
+ * @summary Create a booking request
+ */
+
+export const createBookingBodyRequestTypeDefault = `Intro Call`;
+export const createBookingBodyTimezoneDefault = `America/Chicago`;
+export const createBookingBodyMeetingTypeDefault = `Zoom`;
+export const createBookingBodyTimeWindow1Default = ``;
+export const createBookingBodyTimeWindow2Default = ``;
+export const createBookingBodyTimeWindow3Default = ``;
+export const createBookingBodyNotesMin = 10;
+
+export const CreateBookingBody = zod.object({
+  name: zod.string().min(1),
+  email: zod.string().email(),
+  company: zod.string().min(1),
+  requestType: zod.string().default(createBookingBodyRequestTypeDefault),
+  timezone: zod.string().default(createBookingBodyTimezoneDefault),
+  meetingType: zod.string().default(createBookingBodyMeetingTypeDefault),
+  timeWindow1: zod.string().default(createBookingBodyTimeWindow1Default),
+  timeWindow2: zod.string().default(createBookingBodyTimeWindow2Default),
+  timeWindow3: zod.string().default(createBookingBodyTimeWindow3Default),
+  phone: zod.string().nullish(),
+  notes: zod.string().min(createBookingBodyNotesMin),
+  website: zod.string().nullish(),
+});

@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: bookings
+    description: Booking request operations
 paths:
   /healthz:
     get:
@@ -24,6 +26,31 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /bookings:
+    post:
+      operationId: createBooking
+      tags: [bookings]
+      summary: Create a booking request
+      description: Submit a Salesforce optimization review request
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CreateBookingBody"
+      responses:
+        "201":
+          description: Booking created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BookingResponse"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +60,65 @@ components:
           type: string
       required:
         - status
-
+    CreateBookingBody:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          format: email
+        company:
+          type: string
+          minLength: 1
+        requestType:
+          type: string
+          default: "Intro Call"
+        timezone:
+          type: string
+          default: "America/Chicago"
+        meetingType:
+          type: string
+          default: "Zoom"
+        timeWindow1:
+          type: string
+          default: ""
+        timeWindow2:
+          type: string
+          default: ""
+        timeWindow3:
+          type: string
+          default: ""
+        phone:
+          type: ["string", "null"]
+        notes:
+          type: string
+          minLength: 10
+        website:
+          type: ["string", "null"]
+      required:
+        - name
+        - email
+        - company
+        - notes
+    BookingResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+        id:
+          type: integer
+        message:
+          type: string
+      required:
+        - success
+        - id
+        - message
+    ErrorResponse:
+      type: object
+      properties:
+        message:
+          type: string
+      required:
+        - message
