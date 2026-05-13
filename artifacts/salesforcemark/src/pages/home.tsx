@@ -1305,57 +1305,58 @@ function GravityFormsSVG() {
 }
 
 function NightlyFlowSVG() {
+  const stars = [[20,20],[32,34],[118,15],[126,44],[107,27],[91,14],[23,54],[116,60],[44,17],[70,28]];
+  const rows = [
+    { label: "Leads Scanned",       value: "2,847", color: "#475569", bg: "#F8FAFC", border: "#E2E8F0" },
+    { label: "Qualified for Nurture", value: "312", color: "#2563EB", bg: "#EFF6FF", border: "#DBEAFE" },
+    { label: "Status Updated",      value: "312",   color: "#0D9488", bg: "#F0FDFA", border: "#CCFBF1" },
+    { label: "Errors Logged",       value: "0",     color: "#16A34A", bg: "#F0FDF4", border: "#BBF7D0" },
+  ];
   return (
     <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <marker id="arr-nightly" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
-          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
-        </marker>
-      </defs>
       <rect width="400" height="165" fill="#EEF4FF"/>
-      <rect x="306" y="7" width="86" height="14" rx="7" fill="#1E3A8A"/>
-      <text x="349" y="17" fontSize="7" fill="white" textAnchor="middle" fontFamily="system-ui" fontWeight="600">Runs Nightly</text>
-      <rect x="8" y="24" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="8" y="24" width="90" height="4" rx="2" fill="#1E3A8A"/>
-      <circle cx="24" cy="32" r="7" fill="#1E3A8A"/>
-      <text x="24" y="36" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
-      <text x="53" y="47" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Scheduled</text>
-      <text x="53" y="59" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Flow Trigger</text>
-      <path d="M 98 47 L 150 47" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
-      <rect x="152" y="24" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="152" y="24" width="90" height="4" rx="2" fill="#2563EB"/>
-      <circle cx="168" cy="32" r="7" fill="#2563EB"/>
-      <text x="168" y="36" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
-      <text x="197" y="47" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Find Inactive</text>
-      <text x="197" y="59" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Leads (SOQL)</text>
-      <path d="M 242 47 L 294 47" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
-      <rect x="296" y="24" width="90" height="46" rx="6" fill="white" stroke="#FEF3C7" strokeWidth="1"/>
-      <rect x="296" y="24" width="90" height="4" rx="2" fill="#D97706"/>
-      <circle cx="312" cy="32" r="7" fill="#D97706"/>
-      <text x="312" y="36" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
-      <text x="341" y="47" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Qualify</text>
-      <text x="341" y="59" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Rules Check</text>
-      <path d="M 386 47 L 395 47 L 395 90 L 5 90 L 5 118" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-nightly)"/>
-      <rect x="8" y="118" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="8" y="118" width="90" height="3" rx="2" fill="#2563EB"/>
-      <circle cx="24" cy="125" r="7" fill="#2563EB"/>
-      <text x="24" y="129" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
-      <text x="53" y="136" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Update to</text>
-      <text x="53" y="148" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Nurture Status</text>
-      <path d="M 98 138 L 150 138" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
-      <rect x="152" y="118" width="90" height="40" rx="6" fill="white" stroke="#CCFBF1" strokeWidth="1"/>
-      <rect x="152" y="118" width="90" height="3" rx="2" fill="#0D9488"/>
-      <circle cx="168" cy="125" r="7" fill="#0D9488"/>
-      <text x="168" y="129" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
-      <text x="197" y="136" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Log Results</text>
-      <text x="197" y="148" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">+ Error handling</text>
-      <path d="M 242 138 L 294 138" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
-      <rect x="296" y="118" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
-      <rect x="296" y="118" width="90" height="3" rx="2" fill="#16A34A"/>
-      <circle cx="312" cy="125" r="7" fill="#16A34A"/>
-      <text x="312" y="129" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
-      <text x="341" y="136" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Send Summary</text>
-      <text x="341" y="148" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui">✓ Email report</text>
+      {/* Left: night automation panel */}
+      <rect x="8" y="8" width="140" height="150" rx="8" fill="#1E3A8A"/>
+      {/* Stars */}
+      {stars.map(([sx, sy], i) => (
+        <circle key={i} cx={sx} cy={sy} r={i % 3 === 0 ? 1.5 : 1} fill="white" opacity={i % 2 === 0 ? 0.8 : 0.45}/>
+      ))}
+      {/* Moon crescent */}
+      <circle cx="78" cy="44" r="20" fill="#3B82F6"/>
+      <circle cx="89" cy="37" r="17" fill="#1E3A8A"/>
+      {/* "Nightly Flow" */}
+      <text x="78" y="77" fontSize="11.5" fill="white" textAnchor="middle" fontWeight="800" fontFamily="system-ui">Nightly Flow</text>
+      <line x1="22" y1="84" x2="134" y2="84" stroke="#3B82F6" strokeWidth="0.75" opacity="0.5"/>
+      {/* Schedule */}
+      <text x="78" y="97" fontSize="7" fill="#93C5FD" textAnchor="middle" fontFamily="system-ui">Triggers every night at</text>
+      <text x="78" y="112" fontSize="13" fill="white" textAnchor="middle" fontWeight="800" fontFamily="system-ui">12:00 AM</text>
+      <text x="78" y="125" fontSize="6.5" fill="#93C5FD" textAnchor="middle" fontFamily="system-ui">365 days / year · Zero manual effort</text>
+      {/* Active badge */}
+      <rect x="30" y="134" width="96" height="16" rx="8" fill="#0D9488" opacity="0.85"/>
+      <circle cx="44" cy="142" r="3.5" fill="#6EE7B7"/>
+      <text x="84" y="146" fontSize="7.5" fill="white" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Active · Running</text>
+      {/* Right: morning summary report */}
+      <rect x="154" y="8" width="238" height="150" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1.5"/>
+      {/* Report header */}
+      <rect x="154" y="8" width="238" height="30" rx="8" fill="#1E3A8A"/>
+      <rect x="154" y="30" width="238" height="8" fill="#1E3A8A"/>
+      <text x="163" y="27" fontSize="8.5" fill="white" fontWeight="700" fontFamily="system-ui">Flow Summary · Morning Report</text>
+      <rect x="312" y="11" width="72" height="14" rx="3" fill="white" opacity="0.15"/>
+      <text x="348" y="22" fontSize="6.5" fill="#93C5FD" textAnchor="middle" fontFamily="system-ui">6:01 AM · Daily</text>
+      {/* Stat rows */}
+      {rows.map((row, i) => (
+        <g key={row.label}>
+          <rect x="160" y={46 + i * 25} width="226" height="21" rx="4" fill={row.bg} stroke={row.border} strokeWidth="0.75"/>
+          <text x="169" y={61 + i * 25} fontSize="7.5" fill="#374151" fontFamily="system-ui">{row.label}</text>
+          <text x="378" y={61 + i * 25} fontSize="9.5" fill={row.color} textAnchor="end" fontWeight="800" fontFamily="system-ui">{row.value}</text>
+        </g>
+      ))}
+      {/* Footer */}
+      <text x="163" y="151" fontSize="6" fill="#94A3B8" fontFamily="system-ui">Runtime: 4m 12s</text>
+      <rect x="270" y="142" width="116" height="15" rx="7.5" fill="#F0FDF4" stroke="#BBF7D0" strokeWidth="1"/>
+      <circle cx="282" cy="149.5" r="4" fill="#16A34A"/>
+      <text x="284" y="152.5" fontSize="5.5" fill="white" textAnchor="middle" fontFamily="system-ui">✓</text>
+      <text x="332" y="153" fontSize="7" fill="#166534" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Summary emailed to team</text>
     </svg>
   );
 }
