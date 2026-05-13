@@ -1228,19 +1228,370 @@ function MasterLeadsSVG() {
   );
 }
 
+function GravityFormsSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-gravity" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="8" y="18" width="90" height="46" rx="6" fill="white" stroke="#EDE9FE" strokeWidth="1"/>
+      <rect x="8" y="18" width="90" height="4" rx="2" fill="#7C3AED"/>
+      <circle cx="24" cy="26" r="7" fill="#7C3AED"/>
+      <text x="24" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
+      <text x="53" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Gravity</text>
+      <text x="53" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Form Submit</text>
+      <path d="M 98 41 L 150 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
+      <rect x="152" y="18" width="90" height="46" rx="6" fill="white" stroke="#FED7AA" strokeWidth="1"/>
+      <rect x="152" y="18" width="90" height="4" rx="2" fill="#F97316"/>
+      <circle cx="168" cy="26" r="7" fill="#F97316"/>
+      <text x="168" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
+      <text x="197" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Zapier</text>
+      <text x="197" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Processing</text>
+      <path d="M 242 41 L 294 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
+      <rect x="296" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="296" y="18" width="90" height="4" rx="2" fill="#1E3A8A"/>
+      <circle cx="312" cy="26" r="7" fill="#1E3A8A"/>
+      <text x="312" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
+      <text x="341" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Match Lead</text>
+      <text x="341" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Email + Phone</text>
+      <path d="M 386 41 L 395 41 L 395 84 L 5 84 L 5 116" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-gravity)"/>
+      <rect x="8" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="8" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
+      <circle cx="24" cy="123" r="7" fill="#2563EB"/>
+      <text x="24" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
+      <text x="53" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Create / Update</text>
+      <text x="53" y="144" fontSize="6.5" fill="#7C3AED" textAnchor="middle" fontFamily="system-ui">or Reactivate</text>
+      <path d="M 98 136 L 150 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
+      <rect x="152" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="152" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
+      <circle cx="168" cy="123" r="7" fill="#2563EB"/>
+      <text x="168" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
+      <text x="197" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Campaign</text>
+      <text x="197" y="144" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Attribution</text>
+      <path d="M 242 136 L 294 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
+      <rect x="296" y="116" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="296" y="116" width="90" height="3" rx="2" fill="#16A34A"/>
+      <circle cx="312" cy="123" r="7" fill="#16A34A"/>
+      <text x="312" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
+      <text x="341" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Rep Alert</text>
+      <text x="341" y="144" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui" fontWeight="600">✓ Notified</text>
+    </svg>
+  );
+}
+
+function NightlyFlowSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-nightly" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="306" y="7" width="86" height="14" rx="7" fill="#1E3A8A"/>
+      <text x="349" y="17" fontSize="7" fill="white" textAnchor="middle" fontFamily="system-ui" fontWeight="600">Runs Nightly</text>
+      <rect x="8" y="24" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="8" y="24" width="90" height="4" rx="2" fill="#1E3A8A"/>
+      <circle cx="24" cy="32" r="7" fill="#1E3A8A"/>
+      <text x="24" y="36" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
+      <text x="53" y="47" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Scheduled</text>
+      <text x="53" y="59" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Flow Trigger</text>
+      <path d="M 98 47 L 150 47" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
+      <rect x="152" y="24" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="152" y="24" width="90" height="4" rx="2" fill="#2563EB"/>
+      <circle cx="168" cy="32" r="7" fill="#2563EB"/>
+      <text x="168" y="36" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
+      <text x="197" y="47" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Find Inactive</text>
+      <text x="197" y="59" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Leads (SOQL)</text>
+      <path d="M 242 47 L 294 47" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
+      <rect x="296" y="24" width="90" height="46" rx="6" fill="white" stroke="#FEF3C7" strokeWidth="1"/>
+      <rect x="296" y="24" width="90" height="4" rx="2" fill="#D97706"/>
+      <circle cx="312" cy="32" r="7" fill="#D97706"/>
+      <text x="312" y="36" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
+      <text x="341" y="47" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Qualify</text>
+      <text x="341" y="59" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Rules Check</text>
+      <path d="M 386 47 L 395 47 L 395 90 L 5 90 L 5 118" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-nightly)"/>
+      <rect x="8" y="118" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="8" y="118" width="90" height="3" rx="2" fill="#2563EB"/>
+      <circle cx="24" cy="125" r="7" fill="#2563EB"/>
+      <text x="24" y="129" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
+      <text x="53" y="136" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Update to</text>
+      <text x="53" y="148" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Nurture Status</text>
+      <path d="M 98 138 L 150 138" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
+      <rect x="152" y="118" width="90" height="40" rx="6" fill="white" stroke="#CCFBF1" strokeWidth="1"/>
+      <rect x="152" y="118" width="90" height="3" rx="2" fill="#0D9488"/>
+      <circle cx="168" cy="125" r="7" fill="#0D9488"/>
+      <text x="168" y="129" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
+      <text x="197" y="136" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Log Results</text>
+      <text x="197" y="148" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">+ Error handling</text>
+      <path d="M 242 138 L 294 138" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-nightly)"/>
+      <rect x="296" y="118" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="296" y="118" width="90" height="3" rx="2" fill="#16A34A"/>
+      <circle cx="312" cy="125" r="7" fill="#16A34A"/>
+      <text x="312" y="129" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
+      <text x="341" y="136" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Send Summary</text>
+      <text x="341" y="148" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui">✓ Email report</text>
+    </svg>
+  );
+}
+
+function PhoneNormSVG() {
+  const dirty = ["(555) 123-4567", "555.123.4567", "+1 555-123-4567", "5551234567", "555 123-4567"];
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-phone" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#2563EB"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="8" y="8" width="140" height="150" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
+      <rect x="8" y="8" width="140" height="22" rx="8" fill="#FEF2F2"/>
+      <rect x="8" y="22" width="140" height="8" fill="#FEF2F2"/>
+      <text x="78" y="22" fontSize="7.5" fill="#DC2626" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Inconsistent Formats</text>
+      {dirty.map((p, i) => (
+        <g key={i}>
+          <rect x="14" y={34 + i * 21} width="128" height="15" rx="3" fill="#FFF5F5" stroke="#FECACA" strokeWidth="0.75"/>
+          <text x="20" y={46 + i * 21} fontSize="8" fill="#DC2626" fontFamily="system-ui">x</text>
+          <text x="30" y={46 + i * 21} fontSize="7.5" fill="#374151" fontFamily="monospace">{p}</text>
+        </g>
+      ))}
+      <rect x="160" y="52" width="76" height="60" rx="8" fill="#EFF6FF" stroke="#DBEAFE" strokeWidth="1.5"/>
+      <text x="198" y="76" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Formula</text>
+      <text x="198" y="89" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Normalize</text>
+      <text x="198" y="100" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Engine</text>
+      <path d="M 148 82 L 159 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-phone)"/>
+      <path d="M 236 82 L 247 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-phone)"/>
+      <rect x="249" y="8" width="143" height="150" rx="8" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="249" y="8" width="143" height="22" rx="8" fill="#F0FDF4"/>
+      <rect x="249" y="22" width="143" height="8" fill="#F0FDF4"/>
+      <text x="320" y="22" fontSize="7.5" fill="#16A34A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Standardized Output</text>
+      {dirty.map((_, i) => (
+        <g key={i}>
+          <rect x="255" y={34 + i * 21} width="131" height="15" rx="3" fill="#F0FDF4" stroke="#BBF7D0" strokeWidth="0.75"/>
+          <circle cx="265" cy={41 + i * 21} r="5" fill="#16A34A"/>
+          <text x="265" y={45 + i * 21} fontSize="6" fill="white" textAnchor="middle" fontFamily="system-ui">✓</text>
+          <text x="276" y={46 + i * 21} fontSize="8" fill="#374151" fontFamily="monospace">15551234567</text>
+        </g>
+      ))}
+      <rect x="259" y="143" width="124" height="16" rx="8" fill="#1E3A8A"/>
+      <text x="321" y="154" fontSize="7.5" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">85,000+ Records Standardized</text>
+    </svg>
+  );
+}
+
+function NoGoDateSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <line x1="35" y1="58" x2="365" y2="58" stroke="#E2E8F0" strokeWidth="2"/>
+      {/* Node 1: New */}
+      <circle cx="35" cy="58" r="10" fill="white" stroke="#94A3B8" strokeWidth="2"/>
+      <text x="35" y="62" fontSize="7" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui" fontWeight="700">New</text>
+      <text x="35" y="78" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">New</text>
+      {/* Arrow 1→2 */}
+      <polygon points="54,54 64,58 54,62" fill="#CBD5E1"/>
+      {/* Node 2: Working */}
+      <circle cx="118" cy="58" r="10" fill="#EFF6FF" stroke="#2563EB" strokeWidth="2"/>
+      <text x="118" y="62" fontSize="6.5" fill="#2563EB" textAnchor="middle" fontFamily="system-ui" fontWeight="700">Work</text>
+      <text x="118" y="78" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Working</text>
+      {/* Arrow 2→3 */}
+      <polygon points="137,54 147,58 137,62" fill="#CBD5E1"/>
+      {/* Node 3: No Go */}
+      <circle cx="200" cy="58" r="13" fill="#FEF2F2" stroke="#DC2626" strokeWidth="2"/>
+      <text x="200" y="54" fontSize="6" fill="#DC2626" textAnchor="middle" fontFamily="system-ui" fontWeight="700">No</text>
+      <text x="200" y="64" fontSize="6" fill="#DC2626" textAnchor="middle" fontFamily="system-ui" fontWeight="700">Go</text>
+      <text x="200" y="82" fontSize="7" fill="#DC2626" textAnchor="middle" fontFamily="system-ui" fontWeight="600">No Go</text>
+      <rect x="163" y="25" width="74" height="14" rx="4" fill="#DC2626"/>
+      <text x="200" y="35" fontSize="6.5" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Date Stamped</text>
+      <line x1="200" y1="39" x2="200" y2="45" stroke="#DC2626" strokeWidth="1" strokeDasharray="2 1"/>
+      {/* Arrow 3→4 */}
+      <polygon points="222,54 232,58 222,62" fill="#CBD5E1"/>
+      {/* Node 4: Reopened */}
+      <circle cx="282" cy="58" r="10" fill="#F0FDF4" stroke="#16A34A" strokeWidth="2"/>
+      <text x="282" y="62" fontSize="6" fill="#16A34A" textAnchor="middle" fontFamily="system-ui" fontWeight="700">Open</text>
+      <text x="282" y="78" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Reopened</text>
+      {/* Arrow 4→5 */}
+      <polygon points="301,54 311,58 301,62" fill="#CBD5E1"/>
+      {/* Node 5: No Go again */}
+      <circle cx="365" cy="58" r="13" fill="#FEF2F2" stroke="#DC2626" strokeWidth="2"/>
+      <text x="365" y="54" fontSize="6" fill="#DC2626" textAnchor="middle" fontFamily="system-ui" fontWeight="700">No</text>
+      <text x="365" y="64" fontSize="6" fill="#DC2626" textAnchor="middle" fontFamily="system-ui" fontWeight="700">Go</text>
+      <text x="365" y="82" fontSize="7" fill="#DC2626" textAnchor="middle" fontFamily="system-ui" fontWeight="600">No Go</text>
+      <rect x="328" y="25" width="74" height="14" rx="4" fill="#DC2626"/>
+      <text x="365" y="35" fontSize="6.5" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Date Updated</text>
+      <line x1="365" y1="39" x2="365" y2="45" stroke="#DC2626" strokeWidth="1" strokeDasharray="2 1"/>
+      {/* Backfill panel */}
+      <rect x="50" y="96" width="300" height="56" rx="8" fill="white" stroke="#DBEAFE" strokeWidth="1.5"/>
+      <rect x="50" y="96" width="300" height="4" rx="4" fill="#1E3A8A"/>
+      <text x="200" y="117" fontSize="9.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Historical Backfill Complete</text>
+      <text x="200" y="132" fontSize="8" fill="#64748B" textAnchor="middle" fontFamily="system-ui">~25,000 records updated for reporting accuracy</text>
+      <text x="200" y="146" fontSize="7.5" fill="#16A34A" textAnchor="middle" fontFamily="system-ui">✓ Immediate KPI readiness at go-live</text>
+    </svg>
+  );
+}
+
+function LeadSourceSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-source" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#2563EB"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      {/* Left: Before */}
+      <rect x="8" y="8" width="148" height="150" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
+      <rect x="8" y="8" width="148" height="22" rx="8" fill="#FEF2F2"/>
+      <rect x="8" y="22" width="148" height="8" fill="#FEF2F2"/>
+      <text x="82" y="22" fontSize="7.5" fill="#DC2626" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Legacy Values (Before)</text>
+      {["Google PPC", "AdWords", "tradeshow", "Expo", "referral", "web form"].map((v, i) => (
+        <g key={i}>
+          <rect x="14" y={35 + i * 18} width="136" height="14" rx="3" fill="#FFF5F5" stroke="#FECACA" strokeWidth="0.75"/>
+          <text x="20" y={46 + i * 18} fontSize="8" fill="#DC2626" fontFamily="system-ui">x </text>
+          <text x="30" y={46 + i * 18} fontSize="8" fill="#374151" fontFamily="system-ui">{v}</text>
+        </g>
+      ))}
+      {/* Center */}
+      <rect x="163" y="52" width="70" height="60" rx="8" fill="#EFF6FF" stroke="#DBEAFE" strokeWidth="1.5"/>
+      <text x="198" y="76" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Cleanup</text>
+      <text x="198" y="89" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">+</text>
+      <text x="198" y="102" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Mapping</text>
+      <path d="M 156 82 L 162 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-source)"/>
+      <path d="M 233 82 L 239 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-source)"/>
+      {/* Right: After */}
+      <rect x="241" y="8" width="151" height="150" rx="8" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="241" y="8" width="151" height="22" rx="8" fill="#F0FDF4"/>
+      <rect x="241" y="22" width="151" height="8" fill="#F0FDF4"/>
+      <text x="316" y="22" fontSize="7.5" fill="#16A34A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Standardized (After)</text>
+      {["Paid Search · Google", "Paid Search · AdWords", "Event · Tradeshow", "Event · Expo", "Referral · Direct", "Web · Form Submit"].map((v, i) => (
+        <g key={i}>
+          <rect x="247" y={35 + i * 18} width="139" height="14" rx="3" fill="#F0FDF4" stroke="#BBF7D0" strokeWidth="0.75"/>
+          <circle cx="257" cy={42 + i * 18} r="4" fill="#16A34A"/>
+          <text x="257" y={45 + i * 18} fontSize="5.5" fill="white" textAnchor="middle" fontFamily="system-ui">✓</text>
+          <text x="267" y={46 + i * 18} fontSize="7.5" fill="#374151" fontFamily="system-ui">{v}</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function BulkImportSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-bulk" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="8" y="18" width="90" height="46" rx="6" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
+      <rect x="8" y="18" width="90" height="4" rx="2" fill="#64748B"/>
+      <circle cx="24" cy="26" r="7" fill="#64748B"/>
+      <text x="24" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
+      <text x="53" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Raw Dataset</text>
+      <text x="53" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">External data</text>
+      <path d="M 98 41 L 150 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
+      <rect x="152" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="152" y="18" width="90" height="4" rx="2" fill="#2563EB"/>
+      <circle cx="168" cy="26" r="7" fill="#2563EB"/>
+      <text x="168" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
+      <text x="197" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Normalize</text>
+      <text x="197" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Phone, email</text>
+      <path d="M 242 41 L 294 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
+      <rect x="296" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="296" y="18" width="90" height="4" rx="2" fill="#1E3A8A"/>
+      <circle cx="312" cy="26" r="7" fill="#1E3A8A"/>
+      <text x="312" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
+      <text x="341" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Match /</text>
+      <text x="341" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Deduplication</text>
+      <path d="M 386 41 L 395 41 L 395 84 L 5 84 L 5 116" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-bulk)"/>
+      <rect x="8" y="116" width="90" height="40" rx="6" fill="white" stroke="#FEF3C7" strokeWidth="1"/>
+      <rect x="8" y="116" width="90" height="3" rx="2" fill="#D97706"/>
+      <circle cx="24" cy="123" r="7" fill="#D97706"/>
+      <text x="24" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
+      <text x="53" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Opportunity</text>
+      <text x="53" y="145" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Conflict Check</text>
+      <path d="M 98 136 L 150 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
+      <rect x="152" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="152" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
+      <circle cx="168" cy="123" r="7" fill="#2563EB"/>
+      <text x="168" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
+      <text x="197" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Assign Owner</text>
+      <text x="197" y="145" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Territory-based</text>
+      <path d="M 242 136 L 294 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
+      <rect x="296" y="116" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="296" y="116" width="90" height="3" rx="2" fill="#16A34A"/>
+      <circle cx="312" cy="123" r="7" fill="#16A34A"/>
+      <text x="312" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
+      <text x="341" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Campaign Attr.</text>
+      <text x="341" y="145" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui">✓ Import Validated</text>
+    </svg>
+  );
+}
+
+function SFTurboSVG() {
+  const actions = [
+    { label: "Copy 18-Digit ID", color: "#2563EB" },
+    { label: "Field Snapshot", color: "#2563EB" },
+    { label: "View API Names", color: "#2563EB" },
+    { label: "Campaign Hierarchy", color: "#7C3AED" },
+    { label: "Email Compose", color: "#16A34A" },
+  ];
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="8" y="8" width="384" height="150" rx="8" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1"/>
+      {/* Browser toolbar */}
+      <rect x="8" y="8" width="384" height="22" rx="8" fill="#E2E8F0"/>
+      <rect x="8" y="22" width="384" height="8" fill="#E2E8F0"/>
+      <circle cx="24" cy="19" r="4" fill="#FC605B"/>
+      <circle cx="36" cy="19" r="4" fill="#FCBA44"/>
+      <circle cx="48" cy="19" r="4" fill="#34C759"/>
+      <rect x="60" y="12" width="260" height="14" rx="4" fill="white" stroke="#CBD5E1" strokeWidth="1"/>
+      <text x="70" y="22" fontSize="6.5" fill="#64748B" fontFamily="system-ui">salesforce.com/lightning/r/Lead/00Q5f00000AbCdEAA</text>
+      {/* SF Lightning nav */}
+      <rect x="8" y="30" width="384" height="18" fill="#1E3A8A"/>
+      <text x="28" y="42" fontSize="8" fill="white" fontWeight="700" fontFamily="system-ui">Salesforce</text>
+      <text x="110" y="42" fontSize="7" fill="#93C5FD" fontFamily="system-ui">Home  Leads  Contacts  Campaigns  Reports</text>
+      {/* Record content */}
+      <rect x="14" y="54" width="220" height="16" rx="4" fill="#F1F5F9"/>
+      <text x="20" y="65" fontSize="8.5" fill="#1E293B" fontWeight="700" fontFamily="system-ui">Lead: John Smith — Acme Corp</text>
+      {[
+        "Email: john@acme.com",
+        "Phone: (555) 123-4567",
+        "Status: Working",
+        "Lead Source: Web Form",
+        "Owner: Sarah R.",
+      ].map((line, i) => (
+        <g key={i}>
+          <rect x="14" y={76 + i * 14} width="218" height="11" rx="2" fill="#F8FAFC" stroke="#F1F5F9" strokeWidth="1"/>
+          <text x="18" y={85 + i * 14} fontSize="7" fill="#64748B" fontFamily="system-ui">{line}</text>
+        </g>
+      ))}
+      {/* SF Turbo floating panel */}
+      <rect x="248" y="48" width="136" height="108" rx="8" fill="white" stroke="#2563EB" strokeWidth="2"/>
+      <rect x="248" y="48" width="136" height="24" rx="8" fill="#1E3A8A"/>
+      <rect x="248" y="64" width="136" height="8" fill="#1E3A8A"/>
+      <text x="316" y="63" fontSize="9.5" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">SF Turbo</text>
+      <text x="316" y="73" fontSize="6.5" fill="#93C5FD" textAnchor="middle" fontFamily="system-ui">Chrome Extension</text>
+      {actions.map((a, i) => (
+        <g key={i}>
+          <rect x="254" y={80 + i * 15} width="124" height="12" rx="4" fill={i === 0 ? "#EFF6FF" : "#F8FAFC"} stroke="#E2E8F0" strokeWidth="0.75"/>
+          <circle cx="263" cy={86 + i * 15} r="4" fill={a.color}/>
+          <text x="271" y={90 + i * 15} fontSize="7" fill="#1E293B" fontFamily="system-ui">{a.label}</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
 const portfolioStudies = [
   {
     id: 1,
-    categories: ["Automation", "Integration", "Lead Routing"],
-    categoryColors: ["#F97316", "#2563EB", "#1E3A8A"],
-    title: "Enterprise Lead Routing & CRM Automation",
-    teaser: "Automated inbound lead capture, routing, deduplication, and notification workflows between web forms, Zapier, and Salesforce. The solution normalized incoming form data, applied interest-based routing and ZIP-code territory assignment, checked for existing Salesforce leads, and created or updated records through lifecycle-aware decision paths. It reduced manual routing delays, improved assignment accuracy, and prevented duplicate records.",
-    tags: ["Zapier", "Salesforce Leads", "JavaScript Logic", "SOQL", "Deduplication", "Audit Logging"],
-    pdfUrl: null as string | null,
-    Graphic: LeadRoutingSVG,
-  },
-  {
-    id: 2,
     categories: ["Reporting", "Analytics", "Lead Management"],
     categoryColors: ["#2563EB", "#1E3A8A", "#16A34A"],
     title: "Facebook Lead Performance Dashboard",
@@ -1250,7 +1601,27 @@ const portfolioStudies = [
     Graphic: FacebookDashSVG,
   },
   {
+    id: 2,
+    categories: ["Automation", "Integration", "Lead Routing"],
+    categoryColors: ["#F97316", "#2563EB", "#1E3A8A"],
+    title: "Enterprise Lead Routing & CRM Automation",
+    teaser: "Automated inbound lead capture, routing, deduplication, and notification workflows between web forms, Zapier, and Salesforce. The solution normalized incoming form data, applied interest-based routing and ZIP-code territory assignment, checked for existing Salesforce leads, and created or updated records through lifecycle-aware decision paths. It reduced manual routing delays, improved assignment accuracy, and prevented duplicate records.",
+    tags: ["Zapier", "Salesforce Leads", "JavaScript Logic", "SOQL", "Deduplication", "Audit Logging"],
+    pdfUrl: null as string | null,
+    Graphic: LeadRoutingSVG,
+  },
+  {
     id: 3,
+    categories: ["Zapier Automation", "Lead Routing", "Salesforce Integration"],
+    categoryColors: ["#F97316", "#2563EB", "#1E3A8A"],
+    title: "Gravity Forms to Salesforce Lead Processing & Routing",
+    teaser: "Connected Gravity Forms, Zapier, and Salesforce to automate lead intake, routing, duplicate prevention, campaign tracking, and rep notifications. The workflow standardized incoming data, matched leads using email, mobile, and business phone logic, then used conditional paths to create, update, or reactivate records. It eliminated manual entry, improved routing accuracy, and gave the sales team faster visibility into new inquiries.",
+    tags: ["Zapier", "Salesforce Leads", "Gravity Forms", "Lead Routing", "SOQL", "Duplicate Prevention"],
+    pdfUrl: null as string | null,
+    Graphic: GravityFormsSVG,
+  },
+  {
+    id: 4,
     categories: ["Zapier", "Salesforce", "Campaign Automation"],
     categoryColors: ["#F97316", "#2563EB", "#7C3AED"],
     title: "Lifecycle-Aware Campaign Automation Architecture",
@@ -1260,7 +1631,7 @@ const portfolioStudies = [
     Graphic: CampaignAutoSVG,
   },
   {
-    id: 4,
+    id: 5,
     categories: ["Dashboard Reporting", "Lead Analytics", "Data Quality"],
     categoryColors: ["#1E3A8A", "#2563EB", "#D97706"],
     title: "Master Leads Dashboard",
@@ -1268,6 +1639,66 @@ const portfolioStudies = [
     tags: ["Salesforce Dashboards", "Salesforce Reports", "Lead Analytics", "Data Quality Reporting", "Executive Reporting"],
     pdfUrl: null as string | null,
     Graphic: MasterLeadsSVG,
+  },
+  {
+    id: 6,
+    categories: ["Salesforce Flow", "Data Hygiene", "Lead Lifecycle Automation"],
+    categoryColors: ["#1E3A8A", "#0D9488", "#2563EB"],
+    title: "Nightly Lead Cleanup & Nurture Automation",
+    teaser: "Implemented a scheduled Salesforce Flow to identify inactive leads, move qualified records into nurture status, and reassign ownership to a central nurture owner. The automation included qualification rules, inactivity checks, audit field updates, custom logging, error handling, and nightly summary reporting. It reduced manual cleanup, improved active pipeline visibility, and created repeatable lead lifecycle governance without daily user intervention.",
+    tags: ["Salesforce Flow", "Scheduled-Triggered Flow", "Lead Lifecycle Management", "Data Hygiene", "Error Handling"],
+    pdfUrl: null as string | null,
+    Graphic: NightlyFlowSVG,
+  },
+  {
+    id: 7,
+    categories: ["Data Quality", "Deduplication", "Salesforce Architecture"],
+    categoryColors: ["#D97706", "#2563EB", "#1E3A8A"],
+    title: "Phone Data Normalization for Lead Matching",
+    teaser: "Standardized more than 85,000 Salesforce phone values so they could be used reliably for lead matching and duplicate prevention. A formula-based normalization field transformed inconsistent phone formats into a consistent comparison value for create-versus-update decisions. The solution improved CRM data quality, reduced duplicate lead risk, and strengthened the reliability of lead routing and automation processes.",
+    tags: ["Salesforce Formula Fields", "Data Normalization", "CRM Data Quality", "Lead Matching", "Deduplication"],
+    pdfUrl: null as string | null,
+    Graphic: PhoneNormSVG,
+  },
+  {
+    id: 8,
+    categories: ["Salesforce Administration", "Data Governance", "Reporting"],
+    categoryColors: ["#1E3A8A", "#D97706", "#2563EB"],
+    title: "Lead Source Standardization & Reporting Transformation",
+    teaser: "Redesigned Lead Source tracking to improve marketing attribution, data quality, and executive reporting. Replaced inconsistent and duplicated source values with a structured Lead Source and Lead Source Detail framework using dependent picklists, page layout updates, historical cleanup, and rebuilt reports. The result was cleaner attribution data, more reliable dashboards, and better visibility into marketing ROI and pipeline performance.",
+    tags: ["Data Architecture", "Dependent Picklists", "Record Types", "Data Cleanup", "Reports & Dashboards"],
+    pdfUrl: null as string | null,
+    Graphic: LeadSourceSVG,
+  },
+  {
+    id: 9,
+    categories: ["Data Management", "Governance", "Import Process"],
+    categoryColors: ["#64748B", "#2563EB", "#D97706"],
+    title: "Salesforce Bulk Import Governance Framework",
+    teaser: "Created a governed framework for preparing, matching, enriching, and importing large external datasets into Salesforce. The process included normalization, deduplication, account hierarchy review, opportunity conflict checks, territory-based ownership assignment, and campaign attribution standards. It helped prevent duplicate records, protect pipeline quality, improve reporting consistency, and create a repeatable process for future bulk imports.",
+    tags: ["Bulk Data Operations", "Data Normalization", "Matching & Deduplication", "Campaign Attribution", "CRM Governance"],
+    pdfUrl: null as string | null,
+    Graphic: BulkImportSVG,
+  },
+  {
+    id: 10,
+    categories: ["Data Tracking", "Historical Backfill", "KPI Readiness"],
+    categoryColors: ["#DC2626", "#1E3A8A", "#16A34A"],
+    title: "No Go Date Tracking & Historical Backfill",
+    teaser: "Improved lead lifecycle reporting by introducing a No Go Date field to track when leads were most recently disqualified. The work included UAT support, field behavior validation, historical Field History Tracking analysis, and a backfill process for approximately 25,000 existing records. The result was stronger reporting accuracy, better lead quality analysis, and immediate KPI readiness at go-live instead of waiting for new data to accumulate.",
+    tags: ["Lead Lifecycle Reporting", "Field History Tracking", "Historical Backfill", "UAT Testing", "KPI Readiness"],
+    pdfUrl: null as string | null,
+    Graphic: NoGoDateSVG,
+  },
+  {
+    id: 11,
+    categories: ["Salesforce Tooling", "Chrome Extension", "Productivity"],
+    categoryColors: ["#2563EB", "#7C3AED", "#16A34A"],
+    title: "SF Turbo — Salesforce Chrome Extension",
+    teaser: "A custom Chrome extension built to add one-click productivity tools directly inside Salesforce Lightning. It helped users copy 18-digit record IDs, inspect field API names, extract campaign hierarchy data, capture field snapshots, and compose outreach emails without leaving the record page. The project also solved deeper Lightning technical challenges by working around Shadow DOM limitations and building a reusable Manifest V3 architecture.",
+    tags: ["Chrome Extension", "JavaScript", "Salesforce Lightning", "Shadow DOM", "Sales Operations Tooling"],
+    pdfUrl: null as string | null,
+    Graphic: SFTurboSVG,
   },
 ];
 
@@ -1349,7 +1780,7 @@ function PortfolioSection() {
         </div>
 
         <p className="text-center text-[13px] text-[#9CA3AF] mt-8">
-          More case studies coming soon — 11 total projects in progress.
+          11 Salesforce projects showcased — additional work samples available upon request.
         </p>
       </div>
     </section>

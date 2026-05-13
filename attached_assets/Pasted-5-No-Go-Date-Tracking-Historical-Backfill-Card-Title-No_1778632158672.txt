@@ -1,0 +1,182 @@
+5. No Go Date Tracking & Historical Backfill
+
+Card Title:
+No Go Date Tracking & Historical Backfill
+
+Category Line:
+Data Tracking · Historical Backfill · KPI Readiness
+
+3–4 Sentence Summary:
+This project improved lead lifecycle reporting by introducing a No Go Date field to track when leads were most recently disqualified. The work included UAT support, field behavior validation, historical Field History Tracking analysis, and a backfill process for approximately 25,000 existing records. The result was stronger reporting accuracy, better lead quality analysis, and immediate KPI readiness at go-live instead of waiting for new data to accumulate.
+
+Short Teaser:
+A Salesforce lifecycle tracking project that added No Go timestamp visibility and backfilled roughly 25,000 historical records for reporting accuracy.
+
+Tags:
+Lead Lifecycle Reporting · Field History Tracking · Historical Backfill · UAT Testing · KPI Readiness
+
+Graphic Direction:
+A timeline or lifecycle graphic showing:
+Status Changes → No Go Date Stamped → Status Changes Away → Date Cleared → Historical Backfill
+
+Image Prompt:
+Create a clean Salesforce lifecycle tracking graphic for a portfolio card. Show a horizontal timeline of lead status changes: New, Working, No Go, Reopened, No Go Again. Highlight the No Go Date being stamped, cleared, and re-stamped. Include a small historical backfill panel showing “25,000 records updated” in a subtle KPI badge. Use a white background, navy blue text, green highlights, light gray connectors, and a professional enterprise reporting style.
+
+6. Phone Data Normalization for Lead Matching & CRM Data Quality
+
+Card Title:
+Phone Data Normalization for Lead Matching
+
+Category Line:
+Data Quality · Deduplication · Salesforce Architecture
+
+3–4 Sentence Summary:
+This project standardized more than 85,000 Salesforce phone values so they could be used reliably for lead matching and duplicate prevention. A formula-based normalization field transformed inconsistent phone formats into a consistent comparison value for create-versus-update decisions. The solution improved CRM data quality, reduced duplicate lead risk, and strengthened the reliability of lead routing and automation processes.
+
+Short Teaser:
+A Salesforce phone normalization engine that standardized 85,000+ records to improve matching, deduplication, and automation reliability.
+
+Tags:
+Salesforce Formula Fields · Data Normalization · CRM Data Quality · Lead Matching · Deduplication
+
+Graphic Direction:
+A before/after data cleanup graphic showing messy phone numbers becoming one standardized value.
+
+Image Prompt:
+Create a clean data normalization graphic for a Salesforce portfolio card. Show messy phone number examples on the left, such as (555) 123-4567, 555.123.4567, +1 555-123-4567, flowing through a formula cleanup engine into one standardized 11-digit value on the right. Include a small badge that says “85,000+ Records Standardized.” Use a modern white UI panel, navy blue headings, green success checks, blue arrows, and light gray table elements. Make it professional and easy to read.
+
+7. Salesforce Bulk Import Governance Framework
+
+Card Title:
+Salesforce Bulk Import Governance Framework
+
+Category Line:
+Data Management · Governance · Import Process
+
+3–4 Sentence Summary:
+This project created a governed framework for preparing, matching, enriching, and importing large external datasets into Salesforce. The process included normalization, deduplication, account hierarchy review, opportunity conflict checks, territory-based ownership assignment, and campaign attribution standards. It helped prevent duplicate records, protect pipeline quality, improve reporting consistency, and create a repeatable process for future bulk imports.
+
+Short Teaser:
+A repeatable Salesforce bulk import framework for cleaner matching, better ownership assignment, campaign attribution, and data governance.
+
+Tags:
+Bulk Data Operations · Data Normalization · Matching & Deduplication · Campaign Attribution · CRM Governance
+
+Graphic Direction:
+A data pipeline graphic showing:
+Raw Dataset → Normalize → Match / Deduplicate → Assign Owner → Attribute Campaign → Import Validation
+
+Image Prompt:
+Create a clean Salesforce bulk import governance graphic for a portfolio card. Show a data pipeline with six stages: Raw Dataset, Normalize, Match and Deduplicate, Opportunity Conflict Check, Assign Owner, Campaign Attribution and Import Validation. Use a modern enterprise workflow style with white cards, navy blue labels, blue arrows, green validation checks, and subtle gray database icons. Make it visually clear, professional, and suitable for a Salesforce consultant website.
+
+8. Lead Source Standardization & Reporting Transformation
+
+Card Title:
+Lead Source Standardization & Reporting Transformation
+
+Category Line:
+Salesforce Administration · Data Governance · Reporting
+
+3–4 Sentence Summary:
+This project redesigned Lead Source tracking to improve marketing attribution, data quality, and executive reporting. It replaced inconsistent and duplicated source values with a structured Lead Source and Lead Source Detail framework using dependent picklists, page layout updates, historical cleanup, and rebuilt reports. The result was cleaner attribution data, more reliable dashboards, and better visibility into marketing ROI and pipeline performance.
+
+Short Teaser:
+A Salesforce attribution cleanup project that standardized Lead Source data, added dependent detail values, and rebuilt reporting around cleaner pipeline data.
+
+Tags:
+Data Architecture · Dependent Picklists · Record Types · Data Cleanup · Reports & Dashboards
+
+Graphic Direction:
+A before/after mapping graphic showing messy legacy lead source values being standardized into clean categories and dependent details.
+
+Image Prompt:
+Create a clean before-and-after Salesforce data governance graphic for a portfolio card. On the left, show messy legacy Lead Source values like Google PPC, AdWords, tradeshow, Expo, referral, web form. In the center, show a cleanup and mapping process. On the right, show standardized Lead Source categories with dependent Lead Source Detail values. Use white cards, navy blue headings, blue connector lines, green success checks, and a polished CRM data architecture style.
+
+9. Salesforce Nightly Lead Cleanup & Nurture Automation
+
+Card Title:
+Nightly Lead Cleanup & Nurture Automation
+
+Category Line:
+Salesforce Flow · Data Hygiene · Lead Lifecycle Automation
+
+3–4 Sentence Summary:
+This project implemented a scheduled Salesforce Flow to identify inactive leads, move qualified records into nurture status, and reassign ownership to a central nurture owner. The automation included qualification rules, inactivity checks, audit field updates, custom logging, error handling, and nightly summary reporting. It reduced manual cleanup, improved active pipeline visibility, and created repeatable lead lifecycle governance without daily user intervention.
+
+Short Teaser:
+A scheduled Salesforce Flow that automatically cleaned inactive leads, moved them to nurture, logged outcomes, and sent nightly reporting summaries.
+
+Tags:
+Salesforce Flow · Scheduled-Triggered Flow · Lead Lifecycle Management · Data Hygiene · Error Handling
+
+Graphic Direction:
+A nightly automation flow showing:
+Scheduled Flow → Find Inactive Leads → Qualification Check → Update to Nurture → Log Results → Send Summary
+
+Image Prompt:
+Create a polished Salesforce Flow automation graphic for a portfolio card. Show a nightly scheduled automation with six connected steps: Scheduled Flow, Find Inactive Leads, Qualification Check, Update to Nurture, Log Results, Send Summary Report. Include small moon/night icon, flow nodes, green checks, and an error logging branch. Use a white and light gray background, navy blue text, Salesforce blue accents, and a clean admin automation style.
+
+10. SF Turbo — Salesforce Chrome Extension
+
+Card Title:
+SF Turbo — Salesforce Chrome Extension
+
+Category Line:
+Salesforce Tooling · Chrome Extension · Productivity
+
+3–4 Sentence Summary:
+SF Turbo is a custom Chrome extension built to add one-click productivity tools directly inside Salesforce Lightning. It helped users copy 18-digit record IDs, inspect field API names, extract campaign hierarchy data, capture field snapshots, and compose outreach emails without leaving the record page. The project also solved deeper Lightning technical challenges by working around Shadow DOM limitations and building a reusable Manifest V3 extension architecture.
+
+Short Teaser:
+A custom Salesforce Chrome extension that added one-click admin and sales productivity tools directly inside Lightning.
+
+Tags:
+Chrome Extension · JavaScript · Salesforce Lightning · Shadow DOM · Sales Operations Tooling
+
+Graphic Direction:
+A Salesforce browser window mockup with a floating “SF Turbo” tool panel listing one-click actions.
+
+Image Prompt:
+Create a clean browser-based Salesforce productivity tool graphic for a portfolio card. Show a simplified Salesforce Lightning record page inside a browser window with a floating side panel labeled SF Turbo. The panel should include one-click actions: Copy 18-Digit ID, Field Snapshot, API Names, Campaign Hierarchy, Email Compose. Use a modern SaaS interface style with white panels, navy blue text, blue Salesforce accents, green check icons, and subtle Chrome extension visual cues. No real company data.
+
+11. Zapier Automation — Gravity Forms to Salesforce Lead Processing & Routing
+
+Card Title:
+Gravity Forms to Salesforce Lead Processing & Routing
+
+Category Line:
+Zapier Automation · Lead Routing · Salesforce Integration
+
+3–4 Sentence Summary:
+This project connected Gravity Forms, Zapier, and Salesforce to automate lead intake, routing, duplicate prevention, campaign tracking, and rep notifications. The workflow standardized incoming data, matched leads using email, mobile, and business phone logic, then used conditional paths to create, update, or reactivate records. It eliminated manual entry, improved routing accuracy, reduced duplicate leads, and gave the sales team faster visibility into new inquiries.
+
+Short Teaser:
+An end-to-end Gravity Forms, Zapier, and Salesforce automation for lead intake, deduplication, routing, campaign tracking, and notifications.
+
+Tags:
+Zapier · Salesforce Leads · Gravity Forms · Lead Routing · SOQL · Duplicate Prevention
+
+Graphic Direction:
+A web form to CRM automation flow showing:
+Gravity Form → Zapier → Match Existing Lead → Create / Update / Reactivate → Campaign Tracking → Rep Alert
+
+Image Prompt:
+Create a clean integration workflow graphic for a Salesforce consultant portfolio card. Show an automated lead processing flow from Gravity Forms to Zapier to Salesforce. Include steps for Match Existing Lead, Create or Update or Reactivate, Campaign Tracking, and Rep Alert. Use modern white cards, navy blue headings, blue arrows, orange Zapier accent, green success indicators, and small CRM/database icons. Keep it attractive, clear, and easy to understand at card size.
+
+Recommended Display Order
+
+I’d organize the section in this order so the strongest and most broadly understandable projects appear first:
+
+Facebook Lead Performance Dashboard
+Enterprise Lead Routing & CRM Automation
+Gravity Forms to Salesforce Lead Processing & Routing
+Lifecycle-Aware Campaign Automation Architecture
+Master Leads Dashboard
+Salesforce Nightly Lead Cleanup & Nurture Automation
+Phone Data Normalization for Lead Matching
+Lead Source Standardization & Reporting Transformation
+Salesforce Bulk Import Governance Framework
+No Go Date Tracking & Historical Backfill
+SF Turbo — Salesforce Chrome Extension
+
+This order starts with the easiest-to-understand dashboard/lead automation work, then moves into deeper data governance, lifecycle automation, and technical tooling.
