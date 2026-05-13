@@ -1232,52 +1232,74 @@ function GravityFormsSVG() {
   return (
     <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <marker id="arr-gravity" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
-          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
+        <marker id="arr-gf-main" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#94A3B8"/>
+        </marker>
+        <marker id="arr-gf-create" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#16A34A"/>
+        </marker>
+        <marker id="arr-gf-update" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#2563EB"/>
+        </marker>
+        <marker id="arr-gf-react" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#7C3AED"/>
         </marker>
       </defs>
       <rect width="400" height="165" fill="#EEF4FF"/>
-      <rect x="8" y="18" width="90" height="46" rx="6" fill="white" stroke="#EDE9FE" strokeWidth="1"/>
-      <rect x="8" y="18" width="90" height="4" rx="2" fill="#7C3AED"/>
-      <circle cx="24" cy="26" r="7" fill="#7C3AED"/>
-      <text x="24" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
-      <text x="53" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Gravity</text>
-      <text x="53" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Form Submit</text>
-      <path d="M 98 41 L 150 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
-      <rect x="152" y="18" width="90" height="46" rx="6" fill="white" stroke="#FED7AA" strokeWidth="1"/>
-      <rect x="152" y="18" width="90" height="4" rx="2" fill="#F97316"/>
-      <circle cx="168" cy="26" r="7" fill="#F97316"/>
-      <text x="168" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
-      <text x="197" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Zapier</text>
-      <text x="197" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Processing</text>
-      <path d="M 242 41 L 294 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
-      <rect x="296" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="296" y="18" width="90" height="4" rx="2" fill="#1E3A8A"/>
-      <circle cx="312" cy="26" r="7" fill="#1E3A8A"/>
-      <text x="312" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
-      <text x="341" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Match Lead</text>
-      <text x="341" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Email + Phone</text>
-      <path d="M 386 41 L 395 41 L 395 84 L 5 84 L 5 116" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-gravity)"/>
-      <rect x="8" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="8" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
-      <circle cx="24" cy="123" r="7" fill="#2563EB"/>
-      <text x="24" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
-      <text x="53" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Create / Update</text>
-      <text x="53" y="144" fontSize="6.5" fill="#7C3AED" textAnchor="middle" fontFamily="system-ui">or Reactivate</text>
-      <path d="M 98 136 L 150 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
-      <rect x="152" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="152" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
-      <circle cx="168" cy="123" r="7" fill="#2563EB"/>
-      <text x="168" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
-      <text x="197" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Campaign</text>
-      <text x="197" y="144" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Attribution</text>
-      <path d="M 242 136 L 294 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gravity)"/>
-      <rect x="296" y="116" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
-      <rect x="296" y="116" width="90" height="3" rx="2" fill="#16A34A"/>
-      <circle cx="312" cy="123" r="7" fill="#16A34A"/>
-      <text x="312" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
-      <text x="341" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Rep Alert</text>
-      <text x="341" y="144" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui" fontWeight="600">✓ Notified</text>
+      {/* Left: Gravity Form UI mockup */}
+      <rect x="8" y="8" width="116" height="150" rx="8" fill="white" stroke="#EDE9FE" strokeWidth="1.5"/>
+      <rect x="8" y="8" width="116" height="22" rx="8" fill="#7C3AED"/>
+      <rect x="8" y="22" width="116" height="8" fill="#7C3AED"/>
+      <text x="66" y="22" fontSize="8" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Gravity Forms</text>
+      {[
+        { label: "First + Last Name", y: 36 },
+        { label: "Email Address",     y: 57 },
+        { label: "Phone Number",      y: 78 },
+        { label: "Area of Interest",  y: 99 },
+      ].map((f) => (
+        <g key={f.label}>
+          <text x="14" y={f.y} fontSize="6" fill="#9CA3AF" fontFamily="system-ui">{f.label}</text>
+          <rect x="14" y={f.y + 3} width="104" height="13" rx="3" fill="#F8FAFC" stroke="#E2E8F0" strokeWidth="1"/>
+        </g>
+      ))}
+      <rect x="14" y="128" width="104" height="20" rx="5" fill="#7C3AED"/>
+      <text x="66" y="141" fontSize="8.5" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Submit Form</text>
+      {/* Arrow: form → Zapier */}
+      <path d="M 124 83 L 133 83" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-gf-main)"/>
+      {/* Center: Zapier hub */}
+      <rect x="134" y="52" width="70" height="62" rx="10" fill="white" stroke="#FED7AA" strokeWidth="2"/>
+      <rect x="134" y="52" width="70" height="5" rx="4" fill="#F97316"/>
+      <ellipse cx="169" cy="79" rx="17" ry="17" fill="#FFF7ED" stroke="#FED7AA" strokeWidth="1.5"/>
+      <text x="169" y="85" fontSize="15" fill="#F97316" textAnchor="middle" fontWeight="900" fontFamily="system-ui">Z</text>
+      <text x="169" y="105" fontSize="7" fill="#92400E" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Zapier</text>
+      {/* 3 fanned arrows: Zapier → outcome cards */}
+      <path d="M 204 74 L 212 28" stroke="#16A34A" strokeWidth="1.5" markerEnd="url(#arr-gf-create)"/>
+      <path d="M 204 82 L 212 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-gf-update)"/>
+      <path d="M 204 88 L 212 134" stroke="#7C3AED" strokeWidth="1.5" markerEnd="url(#arr-gf-react)"/>
+      {/* Outcome 1: Create New Lead */}
+      <rect x="213" y="8" width="179" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="213" y="8" width="179" height="3" rx="2" fill="#16A34A"/>
+      <circle cx="228" cy="23" r="9" fill="#F0FDF4" stroke="#BBF7D0" strokeWidth="1"/>
+      <text x="228" y="28" fontSize="12" fill="#16A34A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">+</text>
+      <text x="244" y="22" fontSize="8.5" fill="#166534" fontWeight="700" fontFamily="system-ui">Create New Lead</text>
+      <text x="244" y="36" fontSize="6.5" fill="#64748B" fontFamily="system-ui">No existing match found</text>
+      {/* Outcome 2: Update Existing */}
+      <rect x="213" y="62" width="179" height="40" rx="6" fill="white" stroke="#BFDBFE" strokeWidth="1.5"/>
+      <rect x="213" y="62" width="179" height="3" rx="2" fill="#2563EB"/>
+      <circle cx="228" cy="77" r="9" fill="#EFF6FF" stroke="#BFDBFE" strokeWidth="1"/>
+      <text x="228" y="82" fontSize="11" fill="#2563EB" textAnchor="middle" fontWeight="700" fontFamily="system-ui">&#8593;</text>
+      <text x="244" y="76" fontSize="8.5" fill="#1E40AF" fontWeight="700" fontFamily="system-ui">Update Existing Lead</text>
+      <text x="244" y="90" fontSize="6.5" fill="#64748B" fontFamily="system-ui">Active record matched</text>
+      {/* Outcome 3: Reactivate */}
+      <rect x="213" y="116" width="179" height="40" rx="6" fill="white" stroke="#DDD6FE" strokeWidth="1.5"/>
+      <rect x="213" y="116" width="179" height="3" rx="2" fill="#7C3AED"/>
+      <circle cx="228" cy="131" r="9" fill="#F5F3FF" stroke="#DDD6FE" strokeWidth="1"/>
+      <text x="228" y="136" fontSize="10" fill="#7C3AED" textAnchor="middle" fontWeight="700" fontFamily="system-ui">&#8635;</text>
+      <text x="244" y="130" fontSize="8.5" fill="#5B21B6" fontWeight="700" fontFamily="system-ui">Reactivate Lead</text>
+      <text x="244" y="144" fontSize="6.5" fill="#64748B" fontFamily="system-ui">Prior closed record found</text>
+      {/* Bottom badges */}
+      <rect x="213" y="160" width="84" height="0" rx="0" fill="none"/>
+      <rect x="213" y="158" width="84" height="0" rx="4" fill="none"/>
     </svg>
   );
 }
