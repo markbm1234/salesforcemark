@@ -1,0 +1,123 @@
+i want you to add a portfolio section above frequently asked questions... there will be 11 case studies shown... i will be giving you 2-3 at the time to add.  site needs to load fast so image size should be optimized but still eye catching.  i am attaching a sample of design style layout
+
+Portfolio Section Intro Copy
+Featured Salesforce Case Studies
+
+Real examples of Salesforce reporting, automation, data cleanup, lead routing, dashboard design, and CRM operations work.
+
+Each project below highlights a practical business problem, the Salesforce solution built, and the operational value delivered through cleaner data, better automation, stronger reporting, and improved sales visibility.
+
+Recommended Card Layout
+
+Each case study card should use this structure:
+
+[Left-side custom graphic]
+
+CATEGORY TAGS
+
+Project Title
+
+3–4 sentence summary explaining:
+- the business problem
+- what was built
+- why it mattered
+
+Small skill tags
+
+[View PDF Case Study →]
+
+Use 2 cards per row on desktop, 1 card per row on mobile, with each card having a white background, subtle border, soft shadow, rounded corners, and a left-side graphic area.
+
+1. Enterprise Lead Routing & CRM Automation
+
+Card Title:
+Enterprise Lead Routing & CRM Automation
+
+Category Line:
+Automation · Integration · Lead Routing
+
+3–4 Sentence Summary:
+This project automated inbound lead capture, routing, deduplication, and notification workflows between web forms, Zapier, and Salesforce. The solution normalized incoming form data, applied interest-based routing and ZIP-code territory assignment, checked for existing Salesforce leads, and created or updated records through lifecycle-aware decision paths. It reduced manual routing delays, improved assignment accuracy, prevented duplicate records, and gave teams better visibility into how routing decisions were made.
+
+Short Teaser:
+Automated web-to-Salesforce lead routing with deduplication, ZIP-based assignment, lifecycle-aware updates, notifications, and audit visibility.
+
+Tags:
+Zapier · Salesforce Leads · JavaScript Logic · SOQL · Deduplication · Audit Logging
+
+Graphic Direction:
+A horizontal workflow graphic showing:
+Web Form → Zapier Processing → Salesforce Lookup → Territory Assignment → Create/Update Lead → Rep Notification
+
+Image Prompt:
+Create a clean modern website card graphic for a Salesforce portfolio project. Show a horizontal lead routing workflow with six steps: Web Form, Zapier Processing, Salesforce Lookup, Territory Assignment, Create/Update Lead, Rep Notification. Use a white/light gray dashboard-style background, navy blue accents, small green success indicators, and orange Zapier accent. Make it look like a professional SaaS process diagram, simple enough to fit in the left side of a portfolio card. No people, no real company names, no clutter.
+
+2. Facebook Lead Performance Dashboard
+
+Card Title:
+Facebook Lead Performance Dashboard
+
+Category Line:
+Reporting · Analytics · Lead Management
+
+3–4 Sentence Summary:
+This Salesforce dashboard connected Facebook lead generation with campaign performance, cost-per-lead reporting, lead quality, sales follow-up, and rep workload visibility. It helped leadership understand not just how many leads were generated, but which campaigns produced better leads and whether sales reps were following up in a timely manner. The project brought marketing ROI, lead quality, stale lead monitoring, and sales accountability into one centralized Salesforce reporting view.
+
+Short Teaser:
+A Salesforce dashboard that turned Facebook lead volume, cost per lead, lead quality, stale leads, and rep workload into one executive-ready view.
+
+Tags:
+Salesforce Sales Cloud · Facebook Lead Ads · Reports & Dashboards · Custom Fields · Lead Management
+
+Graphic Direction:
+A mini Salesforce dashboard mockup with KPI cards, campaign chart, lead quality donut, and stale leads table.
+
+Image Prompt:
+Create a clean mini dashboard graphic for a Salesforce case study card. Show a simplified Facebook Lead Performance Dashboard with KPI cards for Total Leads, Cost Per Lead, Qualified Leads, Stale Leads, plus a small bar chart and lead quality donut chart. Use a modern white dashboard UI with navy blue text, blue chart elements, green positive indicators, and subtle gray borders. Make it polished, professional, and readable as a small left-side card graphic. Do not use real company names or actual data.
+
+3. Lifecycle-Aware Campaign Automation Architecture
+
+Card Title:
+Lifecycle-Aware Campaign Automation Architecture
+
+Category Line:
+Zapier · Salesforce · Campaign Automation
+
+3–4 Sentence Summary:
+This project automated campaign landing-page lead intake and CRM updates through a multi-step Zapier workflow connected to Salesforce. The automation searched for existing leads using email and normalized phone matching, then used lifecycle-aware logic to decide whether to create, update, or reactivate a lead without disrupting active sales ownership. It also handled campaign association, duplicate prevention, configuration management, and test/production safety controls for a more maintainable automation framework.
+
+Short Teaser:
+A lifecycle-aware Zapier and Salesforce automation that protected active leads, prevented duplicates, and improved campaign attribution.
+
+Tags:
+Zapier Automation · Salesforce Leads · Campaign Automation · Lead Deduplication · Lifecycle Logic
+
+Graphic Direction:
+A control-center style graphic showing:
+Landing Page Lead → Match Existing Lead → Lifecycle Decision → Campaign Association → Notification / Logging
+
+Image Prompt:
+Create a polished Salesforce automation architecture graphic for a portfolio card. Show a clean control-center workflow with five connected modules: Landing Page Lead, Match Existing Lead, Lifecycle Decision, Campaign Association, Notification and Logging. Include small branch indicators for Create New, Update Existing, and Reactivate Lead. Use white and light gray UI panels, navy blue headings, blue connector lines, green check icons, and subtle orange accents for Zapier. Keep it professional and easy to understand at small size.
+
+4. Master Leads Dashboard
+
+Card Title:
+Master Leads Dashboard
+
+Category Line:
+Dashboard Reporting · Lead Analytics · Data Quality
+
+3–4 Sentence Summary:
+This executive Salesforce dashboard centralized visibility into lead volume, lead quality, marketing source performance, ownership distribution, and lead aging. It helped leadership and sales managers evaluate database health, identify stale or incomplete records, and understand which marketing sources were contributing to pipeline growth. The project turned disconnected lead reports into one clear dashboard for monitoring CRM health and marketing performance.
+
+Short Teaser:
+An executive Salesforce dashboard for lead volume, source performance, data quality, aging, ownership, and database health.
+
+Tags:
+Salesforce Dashboards · Salesforce Reports · Lead Analytics · Data Quality Reporting · Executive Reporting
+
+Graphic Direction:
+A dashboard preview with KPI tiles, source breakdown chart, aging chart, and data quality indicators.
+
+Image Prompt:
+Create a professional Salesforce dashboard preview graphic for a portfolio card. Show an executive Master Leads Dashboard with KPI cards for Total Leads, New Leads, Missing Contact Info, Aging Leads, and Lead Sources. Include a simple source distribution chart, lead aging bar chart, and data quality score indicator. Use a clean white dashboard interface with navy blue typography, blue chart accents, green status indicators, and light gray borders. Make it visually attractive but not overly detailed.

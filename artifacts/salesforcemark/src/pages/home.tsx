@@ -975,6 +975,389 @@ function PricingSection() {
   );
 }
 
+// ─── PORTFOLIO SECTION ────────────────────────────────────────────────────────
+
+function LeadRoutingSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-lead" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      {/* Row 1: Steps 1–3 */}
+      <rect x="8" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="8" y="18" width="90" height="4" rx="2" fill="#2563EB"/>
+      <circle cx="24" cy="26" r="7" fill="#2563EB"/>
+      <text x="24" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
+      <text x="53" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Web Form</text>
+      <text x="53" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Submission</text>
+
+      <path d="M 98 41 L 150 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-lead)"/>
+
+      <rect x="152" y="18" width="90" height="46" rx="6" fill="white" stroke="#FED7AA" strokeWidth="1"/>
+      <rect x="152" y="18" width="90" height="4" rx="2" fill="#F97316"/>
+      <circle cx="168" cy="26" r="7" fill="#F97316"/>
+      <text x="168" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
+      <text x="197" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Zapier</text>
+      <text x="197" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Processing</text>
+
+      <path d="M 242 41 L 294 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-lead)"/>
+
+      <rect x="296" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="296" y="18" width="90" height="4" rx="2" fill="#1E3A8A"/>
+      <circle cx="312" cy="26" r="7" fill="#1E3A8A"/>
+      <text x="312" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
+      <text x="341" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Salesforce</text>
+      <text x="341" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Lookup</text>
+
+      {/* U-turn connector */}
+      <path d="M 386 41 L 395 41 L 395 84 L 5 84 L 5 116" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-lead)"/>
+
+      {/* Row 2: Steps 4–6 */}
+      <rect x="8" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="8" y="116" width="90" height="3" rx="2" fill="#1E40AF"/>
+      <circle cx="24" cy="123" r="7" fill="#1E40AF"/>
+      <text x="24" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
+      <text x="53" y="136" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Territory</text>
+      <text x="53" y="148" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Assignment</text>
+
+      <path d="M 98 136 L 150 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-lead)"/>
+
+      <rect x="152" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="152" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
+      <circle cx="168" cy="123" r="7" fill="#2563EB"/>
+      <text x="168" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
+      <text x="197" y="136" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Create / Update</text>
+      <text x="197" y="148" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Lead Record</text>
+
+      <path d="M 242 136 L 294 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-lead)"/>
+
+      <rect x="296" y="116" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="296" y="116" width="90" height="3" rx="2" fill="#16A34A"/>
+      <circle cx="312" cy="123" r="7" fill="#16A34A"/>
+      <text x="312" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
+      <text x="341" y="136" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Rep Notified</text>
+      <text x="341" y="148" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui" fontWeight="600">✓ Assigned</text>
+    </svg>
+  );
+}
+
+function FacebookDashSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="8" y="8" width="384" height="150" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
+      {/* Header */}
+      <rect x="8" y="8" width="384" height="26" rx="8" fill="#1E3A8A"/>
+      <rect x="8" y="26" width="384" height="8" fill="#1E3A8A"/>
+      <ellipse cx="26" cy="21" rx="8" ry="5.5" fill="#60A5FA" opacity="0.9"/>
+      <text x="45" y="25" fontSize="8.5" fill="white" fontWeight="700" fontFamily="system-ui">Facebook Lead Performance Dashboard</text>
+      {/* KPI boxes */}
+      {[
+        { x: 14, label: "Total Leads", value: "2,842", color: "#1E293B", bg: "#F8FAFF", border: "#E2E8F0" },
+        { x: 109, label: "Cost / Lead", value: "$6.24", color: "#1E293B", bg: "#F8FAFF", border: "#E2E8F0" },
+        { x: 204, label: "Qualified", value: "854", color: "#16A34A", bg: "#F0FDF4", border: "#BBF7D0" },
+        { x: 299, label: "Stale Leads", value: "312", color: "#DC2626", bg: "#FEF2F2", border: "#FECACA" },
+      ].map((k, i) => (
+        <g key={i}>
+          <rect x={k.x} y="40" width="88" height="32" rx="4" fill={k.bg} stroke={k.border} strokeWidth="1"/>
+          <text x={k.x + 44} y="52" fontSize="6.5" fill="#64748B" textAnchor="middle" fontFamily="system-ui">{k.label}</text>
+          <text x={k.x + 44} y="65" fontSize="11" fill={k.color} textAnchor="middle" fontWeight="700" fontFamily="system-ui">{k.value}</text>
+        </g>
+      ))}
+      <line x1="14" y1="78" x2="386" y2="78" stroke="#F1F5F9" strokeWidth="1"/>
+      {/* Bar chart */}
+      <text x="20" y="89" fontSize="6.5" fill="#64748B" fontWeight="600" fontFamily="system-ui">Leads Over Time</text>
+      {[28, 20, 36, 24, 42, 30, 48, 38].map((h, i) => (
+        <rect key={i} x={20 + i * 16} y={150 - h} width="11" height={h} rx="2"
+              fill={i === 6 ? "#2563EB" : i % 2 === 0 ? "#60A5FA" : "#93C5FD"}/>
+      ))}
+      <line x1="14" y1="150" x2="155" y2="150" stroke="#E2E8F0" strokeWidth="1"/>
+      {/* Donut chart */}
+      <text x="210" y="89" fontSize="6.5" fill="#64748B" fontWeight="600" fontFamily="system-ui">Lead Quality Breakdown</text>
+      <circle cx="255" cy="124" r="22" fill="none" stroke="#E2E8F0" strokeWidth="9"/>
+      <circle cx="255" cy="124" r="22" fill="none" stroke="#2563EB" strokeWidth="9"
+              strokeDasharray="41 97" strokeDashoffset="0" transform="rotate(-90 255 124)"/>
+      <circle cx="255" cy="124" r="22" fill="none" stroke="#93C5FD" strokeWidth="9"
+              strokeDasharray="62 76" strokeDashoffset="-41" transform="rotate(-90 255 124)"/>
+      <circle cx="255" cy="124" r="22" fill="none" stroke="#CBD5E1" strokeWidth="9"
+              strokeDasharray="21 117" strokeDashoffset="-103" transform="rotate(-90 255 124)"/>
+      <text x="255" y="121" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2,842</text>
+      <text x="255" y="131" fontSize="6" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Total</text>
+      {/* Legend */}
+      {[
+        { y: 108, color: "#2563EB", label: "Qualified 30%" },
+        { y: 120, color: "#93C5FD", label: "Working 45%" },
+        { y: 132, color: "#CBD5E1", label: "Unqualified 15%" },
+        { y: 144, color: "#F1F5F9", label: "Trash 10%" },
+      ].map((l, i) => (
+        <g key={i}>
+          <rect x="292" y={l.y - 5} width="6" height="6" rx="1" fill={l.color} stroke="#E2E8F0" strokeWidth="0.5"/>
+          <text x="302" y={l.y + 1} fontSize="6.5" fill="#64748B" fontFamily="system-ui">{l.label}</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+function CampaignAutoSVG() {
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr-camp" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
+          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
+        </marker>
+      </defs>
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      {/* Step 1 */}
+      <rect x="6" y="24" width="68" height="38" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="6" y="24" width="68" height="3" rx="2" fill="#2563EB"/>
+      <text x="40" y="40" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Landing</text>
+      <text x="40" y="51" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Page Lead</text>
+      <text x="40" y="72" fontSize="6" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui">Step 1</text>
+      <path d="M 74 43 L 90 43" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-camp)"/>
+      {/* Step 2 */}
+      <rect x="91" y="24" width="68" height="38" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="91" y="24" width="68" height="3" rx="2" fill="#1E40AF"/>
+      <text x="125" y="40" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Match</text>
+      <text x="125" y="51" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Existing Lead</text>
+      <text x="125" y="72" fontSize="6" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui">Step 2</text>
+      <path d="M 159 43 L 175 43" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-camp)"/>
+      {/* Step 3: Decision diamond */}
+      <path d="M 210 24 L 242 43 L 210 62 L 178 43 Z" fill="white" stroke="#F59E0B" strokeWidth="1.5"/>
+      <text x="210" y="40" fontSize="6.5" fill="#92400E" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Lifecycle</text>
+      <text x="210" y="51" fontSize="6.5" fill="#92400E" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Decision</text>
+      <text x="210" y="78" fontSize="6" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui">Step 3</text>
+      {/* 3 branch outputs */}
+      <path d="M 210 24 L 210 10 L 275 10" stroke="#16A34A" strokeWidth="1" strokeDasharray="3 2"/>
+      <text x="232" y="8" fontSize="6" fill="#16A34A" fontFamily="system-ui">Create New</text>
+      <path d="M 242 43 L 275 43" stroke="#2563EB" strokeWidth="1" strokeDasharray="3 2"/>
+      <text x="253" y="40" fontSize="6" fill="#2563EB" fontFamily="system-ui">Update</text>
+      <path d="M 210 62 L 210 76 L 275 76" stroke="#7C3AED" strokeWidth="1" strokeDasharray="3 2"/>
+      <text x="228" y="73" fontSize="6" fill="#7C3AED" fontFamily="system-ui">Reactivate</text>
+      {/* Merge lines */}
+      <path d="M 275 10 L 290 10 L 290 43" stroke="#94A3B8" strokeWidth="1" strokeDasharray="3 2"/>
+      <path d="M 275 43 L 290 43" stroke="#94A3B8" strokeWidth="1" strokeDasharray="3 2"/>
+      <path d="M 275 76 L 290 76 L 290 43" stroke="#94A3B8" strokeWidth="1" strokeDasharray="3 2"/>
+      <path d="M 290 43 L 308 43" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-camp)"/>
+      {/* Step 4 */}
+      <rect x="309" y="24" width="82" height="38" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
+      <rect x="309" y="24" width="82" height="3" rx="2" fill="#2563EB"/>
+      <text x="350" y="40" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Campaign</text>
+      <text x="350" y="51" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Association</text>
+      <text x="350" y="72" fontSize="6" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui">Step 4</text>
+      {/* Down arrow to step 5 */}
+      <path d="M 350 62 L 350 88" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-camp)"/>
+      {/* Step 5 */}
+      <rect x="210" y="89" width="280" height="42" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
+      <rect x="210" y="89" width="280" height="3" rx="2" fill="#16A34A"/>
+      <text x="350" y="108" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Notification + Audit Logging</text>
+      <text x="350" y="121" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui" fontWeight="600">✓ Duplicate prevention · ✓ Audit trail · ✓ Rep notified</text>
+      <text x="350" y="141" fontSize="6" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui">Step 5</text>
+      {/* Safety badge */}
+      <rect x="10" y="98" width="180" height="32" rx="6" fill="#FFF7ED" stroke="#FED7AA" strokeWidth="1"/>
+      <text x="100" y="111" fontSize="7" fill="#92400E" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Active Lead Protection</text>
+      <text x="100" y="122" fontSize="6.5" fill="#D97706" textAnchor="middle" fontFamily="system-ui">Sales ownership preserved</text>
+    </svg>
+  );
+}
+
+function MasterLeadsSVG() {
+  const sources = [
+    { label: "Web Forms", pct: 0.38, val: "38%", color: "#2563EB" },
+    { label: "Facebook Ads", pct: 0.28, val: "28%", color: "#3B82F6" },
+    { label: "Campaigns", pct: 0.20, val: "20%", color: "#93C5FD" },
+    { label: "Other", pct: 0.14, val: "14%", color: "#CBD5E1" },
+  ];
+  return (
+    <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="400" height="165" fill="#EEF4FF"/>
+      <rect x="8" y="8" width="384" height="150" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
+      {/* Header */}
+      <rect x="8" y="8" width="384" height="24" rx="8" fill="#1E3A8A"/>
+      <rect x="8" y="24" width="384" height="8" fill="#1E3A8A"/>
+      <text x="200" y="23" fontSize="9" fill="white" fontWeight="700" textAnchor="middle" fontFamily="system-ui">Master Leads Dashboard — Executive View</text>
+      {/* KPI tiles */}
+      {[
+        { x: 14, label: "Total Leads", value: "14,382", color: "#1E3A8A", bg: "#EEF4FF" },
+        { x: 112, label: "New This Month", value: "1,247", color: "#2563EB", bg: "#EFF6FF" },
+        { x: 210, label: "Missing Info", value: "843", color: "#D97706", bg: "#FFFBEB" },
+        { x: 308, label: "Aging > 30d", value: "2,104", color: "#DC2626", bg: "#FEF2F2" },
+      ].map((k, i) => (
+        <g key={i}>
+          <rect x={k.x} y="38" width="90" height="32" rx="4" fill={k.bg} stroke="#E2E8F0" strokeWidth="1"/>
+          <text x={k.x + 45} y="50" fontSize="6.5" fill="#64748B" textAnchor="middle" fontFamily="system-ui">{k.label}</text>
+          <text x={k.x + 45} y="63" fontSize="11" fill={k.color} textAnchor="middle" fontWeight="700" fontFamily="system-ui">{k.value}</text>
+        </g>
+      ))}
+      <line x1="14" y1="76" x2="386" y2="76" stroke="#F1F5F9" strokeWidth="1"/>
+      {/* Lead Sources bars */}
+      <text x="20" y="87" fontSize="6.5" fill="#64748B" fontWeight="600" fontFamily="system-ui">Lead Sources</text>
+      {sources.map((s, i) => {
+        const y = 93 + i * 16;
+        return (
+          <g key={i}>
+            <text x="18" y={y + 8} fontSize="6.5" fill="#64748B" fontFamily="system-ui">{s.label}</text>
+            <rect x="75" y={y} width="130" height="9" rx="2" fill="#F1F5F9"/>
+            <rect x="75" y={y} width={130 * s.pct} height="9" rx="2" fill={s.color}/>
+            <text x="209" y={y + 8} fontSize="6.5" fill="#374151" fontWeight="600" fontFamily="system-ui">{s.val}</text>
+          </g>
+        );
+      })}
+      {/* Data quality donut */}
+      <text x="260" y="87" fontSize="6.5" fill="#64748B" fontWeight="600" fontFamily="system-ui">Data Quality Score</text>
+      <circle cx="310" cy="128" r="26" fill="none" stroke="#E2E8F0" strokeWidth="10"/>
+      <circle cx="310" cy="128" r="26" fill="none" stroke="#2563EB" strokeWidth="10"
+              strokeDasharray="115 48" strokeDashoffset="0" transform="rotate(-90 310 128)"/>
+      <text x="310" y="124" fontSize="11" fill="#1E293B" textAnchor="middle" fontWeight="700" fontFamily="system-ui">71%</text>
+      <text x="310" y="135" fontSize="6" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Quality</text>
+      {/* Status dots */}
+      {[
+        { color: "#16A34A", label: "Complete: 71%" },
+        { color: "#D97706", label: "Missing email: 18%" },
+        { color: "#DC2626", label: "No phone: 11%" },
+      ].map((d, i) => (
+        <g key={i}>
+          <circle cx="252" cy={102 + i * 13} r="4" fill={d.color}/>
+          <text x="260" y={106 + i * 13} fontSize="6.5" fill="#64748B" fontFamily="system-ui">{d.label}</text>
+        </g>
+      ))}
+    </svg>
+  );
+}
+
+const portfolioStudies = [
+  {
+    id: 1,
+    categories: ["Automation", "Integration", "Lead Routing"],
+    categoryColors: ["#F97316", "#2563EB", "#1E3A8A"],
+    title: "Enterprise Lead Routing & CRM Automation",
+    teaser: "Automated inbound lead capture, routing, deduplication, and notification workflows between web forms, Zapier, and Salesforce. The solution normalized incoming form data, applied interest-based routing and ZIP-code territory assignment, checked for existing Salesforce leads, and created or updated records through lifecycle-aware decision paths. It reduced manual routing delays, improved assignment accuracy, and prevented duplicate records.",
+    tags: ["Zapier", "Salesforce Leads", "JavaScript Logic", "SOQL", "Deduplication", "Audit Logging"],
+    pdfUrl: null as string | null,
+    Graphic: LeadRoutingSVG,
+  },
+  {
+    id: 2,
+    categories: ["Reporting", "Analytics", "Lead Management"],
+    categoryColors: ["#2563EB", "#1E3A8A", "#16A34A"],
+    title: "Facebook Lead Performance Dashboard",
+    teaser: "Connected Facebook lead generation with campaign performance, cost-per-lead reporting, lead quality, sales follow-up, and rep workload visibility. Helped leadership understand not just how many leads were generated, but which campaigns produced better leads and whether reps were following up in a timely manner. The project brought marketing ROI, lead quality, and sales accountability into one centralized Salesforce view.",
+    tags: ["Salesforce Sales Cloud", "Facebook Lead Ads", "Reports & Dashboards", "Custom Fields", "Lead Management"],
+    pdfUrl: null as string | null,
+    Graphic: FacebookDashSVG,
+  },
+  {
+    id: 3,
+    categories: ["Zapier", "Salesforce", "Campaign Automation"],
+    categoryColors: ["#F97316", "#2563EB", "#7C3AED"],
+    title: "Lifecycle-Aware Campaign Automation Architecture",
+    teaser: "Automated campaign landing-page lead intake and CRM updates through a multi-step Zapier workflow connected to Salesforce. The automation searched for existing leads using email and normalized phone matching, then used lifecycle-aware logic to decide whether to create, update, or reactivate a lead without disrupting active sales ownership. It also handled campaign association, duplicate prevention, and test/production safety controls.",
+    tags: ["Zapier Automation", "Salesforce Leads", "Campaign Automation", "Lead Deduplication", "Lifecycle Logic"],
+    pdfUrl: null as string | null,
+    Graphic: CampaignAutoSVG,
+  },
+  {
+    id: 4,
+    categories: ["Dashboard Reporting", "Lead Analytics", "Data Quality"],
+    categoryColors: ["#1E3A8A", "#2563EB", "#D97706"],
+    title: "Master Leads Dashboard",
+    teaser: "Centralized visibility into lead volume, lead quality, marketing source performance, ownership distribution, and lead aging into one executive Salesforce dashboard. Helped leadership and sales managers evaluate database health, identify stale or incomplete records, and understand which marketing sources were contributing to pipeline growth. Turned disconnected lead reports into one clear view.",
+    tags: ["Salesforce Dashboards", "Salesforce Reports", "Lead Analytics", "Data Quality Reporting", "Executive Reporting"],
+    pdfUrl: null as string | null,
+    Graphic: MasterLeadsSVG,
+  },
+];
+
+function PortfolioSection() {
+  return (
+    <section id="portfolio" className="py-20 sm:py-24 bg-[#F8FAFC]" data-testid="section-portfolio">
+      <div className="max-w-5xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <p className="text-[11px] font-bold uppercase tracking-[0.20em] text-[#2563EB] mb-3">Portfolio</p>
+          <h2 className="text-[26px] sm:text-[30px] font-bold text-[#111827] tracking-tight mb-4" data-testid="text-portfolio-title">
+            Featured Salesforce Case Studies
+          </h2>
+          <p className="text-[16px] text-[#6B7280] max-w-2xl mx-auto leading-[1.6]">
+            Real examples of Salesforce reporting, automation, data cleanup, lead routing, dashboard design, and CRM operations work.
+          </p>
+          <p className="text-[14px] text-[#9CA3AF] max-w-2xl mx-auto leading-[1.6] mt-2">
+            Each project highlights a practical business problem, the Salesforce solution built, and the operational value delivered through cleaner data, better automation, stronger reporting, and improved sales visibility.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {portfolioStudies.map((study) => (
+            <div
+              key={study.id}
+              className="bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden hover:shadow-md transition-shadow duration-200"
+              style={{ boxShadow: "0 2px 8px -2px rgba(30,58,138,0.07), 0 8px 20px -4px rgba(30,58,138,0.08)" }}
+              data-testid={`card-portfolio-${study.id}`}
+            >
+              {/* Graphic */}
+              <div className="w-full h-[180px] bg-[#EEF4FF] overflow-hidden flex items-center justify-center">
+                <study.Graphic />
+              </div>
+
+              {/* Content */}
+              <div className="p-5">
+                <div className="flex flex-wrap items-center gap-x-1 mb-2">
+                  {study.categories.map((cat, i) => (
+                    <span key={i} className="text-[10px] font-bold uppercase tracking-[0.10em]">
+                      {i > 0 && <span className="text-[#D1D5DB] mx-1">·</span>}
+                      <span style={{ color: study.categoryColors[i] }}>{cat}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <h3 className="text-[16px] font-bold text-[#111827] leading-snug mb-3">
+                  {study.title}
+                </h3>
+
+                <p className="text-[13px] text-[#6B7280] leading-[1.65] mb-4" style={{ display: "-webkit-box", WebkitLineClamp: 4, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                  {study.teaser}
+                </p>
+
+                <div className="flex flex-wrap gap-1.5 mb-4">
+                  {study.tags.map((tag) => (
+                    <span key={tag} className="text-[11px] font-medium text-[#374151] bg-[#F3F4F6] border border-[#E5E7EB] px-2 py-0.5 rounded-full">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {study.pdfUrl ? (
+                  <a
+                    href={study.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 bg-[#F59E0B] hover:bg-[#D97706] text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors"
+                    data-testid={`link-portfolio-pdf-${study.id}`}
+                  >
+                    View PDF Case Study →
+                  </a>
+                ) : (
+                  <span className="inline-flex items-center gap-1.5 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-medium px-4 py-2 rounded-lg cursor-default">
+                    PDF Case Study — Coming Soon
+                  </span>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p className="text-center text-[13px] text-[#9CA3AF] mt-8">
+          More case studies coming soon — 11 total projects in progress.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+// ─── END PORTFOLIO SECTION ────────────────────────────────────────────────────
+
 function FaqSection() {
   return (
     <section id="faq" className="py-20 sm:py-24 bg-[#F8FAFC]" data-testid="section-faq">
@@ -1300,6 +1683,7 @@ export default function Home() {
       <PricingSection />
       <CaseStudiesSection />
       <AboutSection />
+      <PortfolioSection />
       <FaqSection />
       <BookACallSection />
       <Footer />
