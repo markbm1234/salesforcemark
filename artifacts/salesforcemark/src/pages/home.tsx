@@ -1839,7 +1839,7 @@ function PortfolioSection() {
           {portfolioStudies.map((study) => (
             <div
               key={study.id}
-              className="bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden hover:shadow-md transition-shadow duration-200"
+              className="bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden hover:shadow-md transition-shadow duration-200 flex flex-col"
               style={{ boxShadow: "0 2px 8px -2px rgba(30,58,138,0.07), 0 8px 20px -4px rgba(30,58,138,0.08)" }}
               data-testid={`card-portfolio-${study.id}`}
             >
@@ -1849,7 +1849,7 @@ function PortfolioSection() {
               </div>
 
               {/* Content */}
-              <div className="p-5">
+              <div className="p-5 flex flex-col flex-1">
                 <div className="flex flex-wrap items-center gap-x-1 mb-2">
                   {study.categories.map((cat, i) => (
                     <span key={i} className="text-[10px] font-bold uppercase tracking-[0.10em]">
@@ -1875,19 +1875,21 @@ function PortfolioSection() {
                   ))}
                 </div>
 
-                {study.pdfUrl ? (
-                  <button
-                    onClick={() => handlePdfClick(study.pdfUrl!)}
-                    className="inline-flex items-center gap-1.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors"
-                    data-testid={`link-portfolio-pdf-${study.id}`}
-                  >
-                    Download PDF Case Study →
-                  </button>
-                ) : (
-                  <span className="inline-flex items-center gap-1.5 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-medium px-4 py-2 rounded-lg cursor-default">
-                    PDF Case Study — Coming Soon
-                  </span>
-                )}
+                <div className="mt-auto pt-2">
+                  {study.pdfUrl ? (
+                    <button
+                      onClick={() => handlePdfClick(study.pdfUrl!)}
+                      className="inline-flex items-center gap-1.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors"
+                      data-testid={`link-portfolio-pdf-${study.id}`}
+                    >
+                      Download PDF Case Study →
+                    </button>
+                  ) : (
+                    <span className="inline-flex items-center gap-1.5 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-medium px-4 py-2 rounded-lg cursor-default">
+                      PDF Case Study — Coming Soon
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
           ))}
