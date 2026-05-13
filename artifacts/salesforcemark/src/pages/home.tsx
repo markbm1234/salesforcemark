@@ -1435,46 +1435,48 @@ function NoGoDateSVG() {
 }
 
 function LeadSourceSVG() {
+  const categories = [
+    { label: "Paid Search", color: "#2563EB", bg: "#EFF6FF", border: "#BFDBFE", cx: 50, details: ["Google", "Bing", "Meta Ads"] },
+    { label: "Events", color: "#7C3AED", bg: "#F5F3FF", border: "#DDD6FE", cx: 150, details: ["Expo", "Tradeshow", "Webinar"] },
+    { label: "Referral", color: "#16A34A", bg: "#F0FDF4", border: "#BBF7D0", cx: 250, details: ["Direct", "Partner", "Agency"] },
+    { label: "Web", color: "#0D9488", bg: "#F0FDFA", border: "#99F6E4", cx: 350, details: ["Form Submit", "Chat", "Organic"] },
+  ];
   return (
     <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <marker id="arr-source" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-          <path d="M 0 0 L 6 3 L 0 6 Z" fill="#2563EB"/>
-        </marker>
-      </defs>
       <rect width="400" height="165" fill="#EEF4FF"/>
-      {/* Left: Before */}
-      <rect x="8" y="8" width="148" height="150" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
-      <rect x="8" y="8" width="148" height="22" rx="8" fill="#FEF2F2"/>
-      <rect x="8" y="22" width="148" height="8" fill="#FEF2F2"/>
-      <text x="82" y="22" fontSize="7.5" fill="#DC2626" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Legacy Values (Before)</text>
-      {["Google PPC", "AdWords", "tradeshow", "Expo", "referral", "web form"].map((v, i) => (
-        <g key={i}>
-          <rect x="14" y={35 + i * 18} width="136" height="14" rx="3" fill="#FFF5F5" stroke="#FECACA" strokeWidth="0.75"/>
-          <text x="20" y={46 + i * 18} fontSize="8" fill="#DC2626" fontFamily="system-ui">x </text>
-          <text x="30" y={46 + i * 18} fontSize="8" fill="#374151" fontFamily="system-ui">{v}</text>
+      {/* Root node */}
+      <rect x="118" y="6" width="164" height="24" rx="8" fill="#1E3A8A"/>
+      <text x="200" y="22" fontSize="9" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Lead Source Framework</text>
+      {/* Root → horizontal branch */}
+      <line x1="200" y1="30" x2="200" y2="42" stroke="#94A3B8" strokeWidth="1.5"/>
+      <line x1="50" y1="42" x2="350" y2="42" stroke="#94A3B8" strokeWidth="1.5"/>
+      {/* Vertical drops to each category */}
+      {categories.map((cat) => (
+        <line key={cat.label + "-drop"} x1={cat.cx} y1="42" x2={cat.cx} y2="48" stroke="#94A3B8" strokeWidth="1.5"/>
+      ))}
+      {/* Category nodes + detail items */}
+      {categories.map((cat) => (
+        <g key={cat.label}>
+          {/* Category node */}
+          <rect x={cat.cx - 40} y={48} width={80} height={22} rx={5} fill={cat.bg} stroke={cat.border} strokeWidth="1.5"/>
+          <text x={cat.cx} y={62} fontSize="7.5" fill={cat.color} textAnchor="middle" fontWeight="700" fontFamily="system-ui">{cat.label}</text>
+          {/* Connector to details */}
+          <line x1={cat.cx} y1={70} x2={cat.cx} y2={78} stroke={cat.border} strokeWidth="1.5"/>
+          {/* Detail items */}
+          {cat.details.map((detail, j) => (
+            <g key={detail}>
+              {j > 0 && (
+                <line x1={cat.cx} y1={78 + (j - 1) * 22 + 18} x2={cat.cx} y2={78 + j * 22} stroke={cat.border} strokeWidth="1" strokeDasharray="2 2"/>
+              )}
+              <rect x={cat.cx - 36} y={78 + j * 22} width={72} height={18} rx={4} fill="white" stroke={cat.border} strokeWidth="1"/>
+              <text x={cat.cx} y={90 + j * 22} fontSize="7" fill="#374151" textAnchor="middle" fontFamily="system-ui">{detail}</text>
+            </g>
+          ))}
         </g>
       ))}
-      {/* Center */}
-      <rect x="163" y="52" width="70" height="60" rx="8" fill="#EFF6FF" stroke="#DBEAFE" strokeWidth="1.5"/>
-      <text x="198" y="76" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Cleanup</text>
-      <text x="198" y="89" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">+</text>
-      <text x="198" y="102" fontSize="7.5" fill="#1E3A8A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Mapping</text>
-      <path d="M 156 82 L 162 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-source)"/>
-      <path d="M 233 82 L 239 82" stroke="#2563EB" strokeWidth="1.5" markerEnd="url(#arr-source)"/>
-      {/* Right: After */}
-      <rect x="241" y="8" width="151" height="150" rx="8" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
-      <rect x="241" y="8" width="151" height="22" rx="8" fill="#F0FDF4"/>
-      <rect x="241" y="22" width="151" height="8" fill="#F0FDF4"/>
-      <text x="316" y="22" fontSize="7.5" fill="#16A34A" textAnchor="middle" fontWeight="700" fontFamily="system-ui">Standardized (After)</text>
-      {["Paid Search · Google", "Paid Search · AdWords", "Event · Tradeshow", "Event · Expo", "Referral · Direct", "Web · Form Submit"].map((v, i) => (
-        <g key={i}>
-          <rect x="247" y={35 + i * 18} width="139" height="14" rx="3" fill="#F0FDF4" stroke="#BBF7D0" strokeWidth="0.75"/>
-          <circle cx="257" cy={42 + i * 18} r="4" fill="#16A34A"/>
-          <text x="257" y={45 + i * 18} fontSize="5.5" fill="white" textAnchor="middle" fontFamily="system-ui">✓</text>
-          <text x="267" y={46 + i * 18} fontSize="7.5" fill="#374151" fontFamily="system-ui">{v}</text>
-        </g>
-      ))}
+      {/* Footer note */}
+      <rect x="68" y="152" width="264" height="11" rx="5.5" fill="#E2E8F0"/>
+      <text x="200" y="161" fontSize="6.5" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Dependent picklists · 42 legacy values standardized · Reports rebuilt</text>
     </svg>
   );
 }
