@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useMutation } from "@tanstack/react-query";
@@ -1620,6 +1620,73 @@ function SFTurboSVG() {
   );
 }
 
+const PDF_SESSION_KEY = "sfmark_pdf_unlocked";
+const PDF_PASSWORD = "ohana";
+
+function PdfPasswordModal({ onUnlock, onClose, pendingUrl }: { onUnlock: () => void; onClose: () => void; pendingUrl: string }) {
+  const [value, setValue] = useState("");
+  const [error, setError] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    setTimeout(() => inputRef.current?.focus(), 50);
+  }, []);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (value.trim().toLowerCase() === PDF_PASSWORD) {
+      sessionStorage.setItem(PDF_SESSION_KEY, "1");
+      onUnlock();
+      window.open(pendingUrl, "_blank", "noopener,noreferrer");
+    } else {
+      setError(true);
+      setValue("");
+      setTimeout(() => inputRef.current?.focus(), 50);
+    }
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm" onClick={onClose}>
+      <div
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-sm mx-4 p-7 relative"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button onClick={onClose} className="absolute top-4 right-4 text-[#9CA3AF] hover:text-[#374151] transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+        </button>
+        <div className="flex items-center gap-3 mb-5">
+          <div className="w-10 h-10 rounded-full bg-[#EFF6FF] flex items-center justify-center flex-shrink-0">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2563EB" strokeWidth="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <div>
+            <h3 className="text-[16px] font-bold text-[#111827]">Case Study Access</h3>
+            <p className="text-[12px] text-[#6B7280]">Enter the password to view PDF case studies</p>
+          </div>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <input
+            ref={inputRef}
+            type="password"
+            value={value}
+            onChange={(e) => { setValue(e.target.value); setError(false); }}
+            placeholder="Password"
+            className={`w-full border rounded-lg px-4 py-2.5 text-[14px] outline-none transition-colors mb-1 ${error ? "border-red-400 bg-red-50 text-red-700 placeholder-red-300" : "border-[#E5E7EB] focus:border-[#2563EB]"}`}
+          />
+          {error && <p className="text-[12px] text-red-500 mb-3">Incorrect password — please try again.</p>}
+          {!error && <div className="mb-3"/>}
+          <button
+            type="submit"
+            className="w-full bg-[#F59E0B] hover:bg-[#D97706] text-white font-semibold text-[14px] py-2.5 rounded-lg transition-colors"
+          >
+            Unlock Case Studies →
+          </button>
+        </form>
+        <p className="text-[11px] text-[#9CA3AF] text-center mt-4">Access stays unlocked for your current session</p>
+      </div>
+    </div>
+  );
+}
+
 const portfolioStudies = [
   {
     id: 1,
@@ -1734,8 +1801,26 @@ const portfolioStudies = [
 ];
 
 function PortfolioSection() {
+  const [unlocked, setUnlocked] = useState(() => sessionStorage.getItem(PDF_SESSION_KEY) === "1");
+  const [modalUrl, setModalUrl] = useState<string | null>(null);
+
+  function handlePdfClick(url: string) {
+    if (unlocked) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    } else {
+      setModalUrl(url);
+    }
+  }
+
   return (
     <section id="portfolio" className="py-20 sm:py-24 bg-[#F8FAFC]" data-testid="section-portfolio">
+      {modalUrl && (
+        <PdfPasswordModal
+          pendingUrl={modalUrl}
+          onUnlock={() => { setUnlocked(true); setModalUrl(null); }}
+          onClose={() => setModalUrl(null)}
+        />
+      )}
       <div className="max-w-5xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-[11px] font-bold uppercase tracking-[0.20em] text-[#2563EB] mb-3">Portfolio</p>
@@ -1791,15 +1876,13 @@ function PortfolioSection() {
                 </div>
 
                 {study.pdfUrl ? (
-                  <a
-                    href={study.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <button
+                    onClick={() => handlePdfClick(study.pdfUrl!)}
                     className="inline-flex items-center gap-1.5 bg-[#F59E0B] hover:bg-[#D97706] text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors"
                     data-testid={`link-portfolio-pdf-${study.id}`}
                   >
                     View PDF Case Study →
-                  </a>
+                  </button>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-medium px-4 py-2 rounded-lg cursor-default">
                     PDF Case Study — Coming Soon
