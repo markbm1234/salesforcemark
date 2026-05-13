@@ -1695,7 +1695,7 @@ const portfolioStudies = [
     title: "Facebook Lead Performance Dashboard",
     teaser: "Connected Facebook lead generation with campaign performance, cost-per-lead reporting, lead quality, sales follow-up, and rep workload visibility. Helped leadership understand not just how many leads were generated, but which campaigns produced better leads and whether reps were following up in a timely manner. The project brought marketing ROI, lead quality, and sales accountability into one centralized Salesforce view.",
     tags: ["Salesforce Sales Cloud", "Facebook Lead Ads", "Reports & Dashboards", "Custom Fields", "Lead Management"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/gy4wn44nhlwbwmcs8758c/Facebook-Leads-Dashboard.pdf?rlkey=depmj10rbpvvaokfb47fqubr7&dl=0" as string | null,
     Graphic: FacebookDashSVG,
   },
   {
@@ -1705,7 +1705,7 @@ const portfolioStudies = [
     title: "Enterprise Lead Routing & CRM Automation",
     teaser: "Automated inbound lead capture, routing, deduplication, and notification workflows between web forms, Zapier, and Salesforce. The solution normalized incoming form data, applied interest-based routing and ZIP-code territory assignment, checked for existing Salesforce leads, and created or updated records through lifecycle-aware decision paths. It reduced manual routing delays, improved assignment accuracy, and prevented duplicate records.",
     tags: ["Zapier", "Salesforce Leads", "JavaScript Logic", "SOQL", "Deduplication", "Audit Logging"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/n657hbtlnor6zzx03wb54/Enterprise-Lead-Routing-CRM-Automation.pdf?rlkey=fx9offxvqyfhnnijgo2co8snb&dl=0" as string | null,
     Graphic: LeadRoutingSVG,
   },
   {
@@ -1715,7 +1715,7 @@ const portfolioStudies = [
     title: "Gravity Forms to Salesforce Lead Processing & Routing",
     teaser: "Connected Gravity Forms, Zapier, and Salesforce to automate lead intake, routing, duplicate prevention, campaign tracking, and rep notifications. The workflow standardized incoming data, matched leads using email, mobile, and business phone logic, then used conditional paths to create, update, or reactivate records. It eliminated manual entry, improved routing accuracy, and gave the sales team faster visibility into new inquiries.",
     tags: ["Zapier", "Salesforce Leads", "Gravity Forms", "Lead Routing", "SOQL", "Duplicate Prevention"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/2im9c8gcppq4n7tk1pvoa/Zapier-Automation-Gravity-Forms-to-Salesforce.pdf?rlkey=fmmr7zja31n6wyb9v3ycnvyyi&dl=0" as string | null,
     Graphic: GravityFormsSVG,
   },
   {
@@ -1725,7 +1725,7 @@ const portfolioStudies = [
     title: "Lifecycle-Aware Campaign Automation Architecture",
     teaser: "Automated campaign landing-page lead intake and CRM updates through a multi-step Zapier workflow connected to Salesforce. The automation searched for existing leads using email and normalized phone matching, then used lifecycle-aware logic to decide whether to create, update, or reactivate a lead without disrupting active sales ownership. It also handled campaign association, duplicate prevention, and test/production safety controls.",
     tags: ["Zapier Automation", "Salesforce Leads", "Campaign Automation", "Lead Deduplication", "Lifecycle Logic"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/5attbp4151n9w0d4nwnc0/Lifecycle-Aware-Campaign-Automation-Architecture.pdf?rlkey=wny43gsqcfgj9fmavxxzvfxum&dl=0" as string | null,
     Graphic: CampaignAutoSVG,
   },
   {
@@ -1735,7 +1735,7 @@ const portfolioStudies = [
     title: "Master Leads Dashboard",
     teaser: "Centralized visibility into lead volume, lead quality, marketing source performance, ownership distribution, and lead aging into one executive Salesforce dashboard. Helped leadership and sales managers evaluate database health, identify stale or incomplete records, and understand which marketing sources were contributing to pipeline growth. Turned disconnected lead reports into one clear view.",
     tags: ["Salesforce Dashboards", "Salesforce Reports", "Lead Analytics", "Data Quality Reporting", "Executive Reporting"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/ihbrltzr87mbou8vjc8cu/Master-Leads-Dashboard-Salesforce-Reports-Dashboards.pdf?rlkey=iv155lh77ek4z8aqwtq43sqlu&dl=0" as string | null,
     Graphic: MasterLeadsSVG,
   },
   {
@@ -1745,7 +1745,7 @@ const portfolioStudies = [
     title: "Nightly Lead Cleanup & Nurture Automation",
     teaser: "Implemented a scheduled Salesforce Flow to identify inactive leads, move qualified records into nurture status, and reassign ownership to a central nurture owner. The automation included qualification rules, inactivity checks, audit field updates, custom logging, error handling, and nightly summary reporting. It reduced manual cleanup, improved active pipeline visibility, and created repeatable lead lifecycle governance without daily user intervention.",
     tags: ["Salesforce Flow", "Scheduled-Triggered Flow", "Lead Lifecycle Management", "Data Hygiene", "Error Handling"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/34b59ovnmqnoml2ofbvaz/Salesforce-Nightly-Lead-Cleanup-Nurture-Automation.pdf?rlkey=ums558y8rrp9lpwr5vl1o2cwm&dl=0" as string | null,
     Graphic: NightlyFlowSVG,
   },
   {
@@ -1755,7 +1755,7 @@ const portfolioStudies = [
     title: "Phone Data Normalization for Lead Matching",
     teaser: "Standardized more than 85,000 Salesforce phone values so they could be used reliably for lead matching and duplicate prevention. A formula-based normalization field transformed inconsistent phone formats into a consistent comparison value for create-versus-update decisions. The solution improved CRM data quality, reduced duplicate lead risk, and strengthened the reliability of lead routing and automation processes.",
     tags: ["Salesforce Formula Fields", "Data Normalization", "CRM Data Quality", "Lead Matching", "Deduplication"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/glsy0y4meyu4dn7y3y5lz/Phone-Data-Normalization-for-Lead-Matching-Data-Quality.pdf?rlkey=2ijou73urv6lt95pr3ocn6ljd&dl=0" as string | null,
     Graphic: PhoneNormSVG,
   },
   {
@@ -1765,7 +1765,7 @@ const portfolioStudies = [
     title: "Lead Source Standardization & Reporting Transformation",
     teaser: "Redesigned Lead Source tracking to improve marketing attribution, data quality, and executive reporting. Replaced inconsistent and duplicated source values with a structured Lead Source and Lead Source Detail framework using dependent picklists, page layout updates, historical cleanup, and rebuilt reports. The result was cleaner attribution data, more reliable dashboards, and better visibility into marketing ROI and pipeline performance.",
     tags: ["Data Architecture", "Dependent Picklists", "Record Types", "Data Cleanup", "Reports & Dashboards"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/7wek2ubtxlihhf79t0iop/Salesforce-Lead-Source-Standardization-Data-Governance.pdf?rlkey=mrhjtpmzlpfthjguvq0fjq0yj&dl=0" as string | null,
     Graphic: LeadSourceSVG,
   },
   {
@@ -1775,7 +1775,7 @@ const portfolioStudies = [
     title: "Salesforce Bulk Import Governance Framework",
     teaser: "Created a governed framework for preparing, matching, enriching, and importing large external datasets into Salesforce. The process included normalization, deduplication, account hierarchy review, opportunity conflict checks, territory-based ownership assignment, and campaign attribution standards. It helped prevent duplicate records, protect pipeline quality, improve reporting consistency, and create a repeatable process for future bulk imports.",
     tags: ["Bulk Data Operations", "Data Normalization", "Matching & Deduplication", "Campaign Attribution", "CRM Governance"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/06rk1iv0vvwuoeqnhvluf/Salesforce-Bulk-Data-Import-Governance-Framework.pdf?rlkey=7tm29h0qlmxro5pvpjw7rzknn&dl=0" as string | null,
     Graphic: BulkImportSVG,
   },
   {
@@ -1785,7 +1785,7 @@ const portfolioStudies = [
     title: "No Go Date Tracking & Historical Backfill",
     teaser: "Improved lead lifecycle reporting by introducing a No Go Date field to track when leads were most recently disqualified. The work included UAT support, field behavior validation, historical Field History Tracking analysis, and a backfill process for approximately 25,000 existing records. The result was stronger reporting accuracy, better lead quality analysis, and immediate KPI readiness at go-live instead of waiting for new data to accumulate.",
     tags: ["Lead Lifecycle Reporting", "Field History Tracking", "Historical Backfill", "UAT Testing", "KPI Readiness"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/qt6a2fon728u552x2g95j/No-Go-Date-Tracking-Historical-Backfill.pdf?rlkey=hxitwpbhym1j23t2j8nyfcf5c&dl=0" as string | null,
     Graphic: NoGoDateSVG,
   },
   {
@@ -1795,7 +1795,7 @@ const portfolioStudies = [
     title: "SF Turbo — Salesforce Chrome Extension",
     teaser: "A custom Chrome extension built to add one-click productivity tools directly inside Salesforce Lightning. It helped users copy 18-digit record IDs, inspect field API names, extract campaign hierarchy data, capture field snapshots, and compose outreach emails without leaving the record page. The project also solved deeper Lightning technical challenges by working around Shadow DOM limitations and building a reusable Manifest V3 architecture.",
     tags: ["Chrome Extension", "JavaScript", "Salesforce Lightning", "Shadow DOM", "Sales Operations Tooling"],
-    pdfUrl: null as string | null,
+    pdfUrl: "https://www.dropbox.com/scl/fi/z72v3a3s2p8bqnvish28b/SF-Turbo-Salesforce-Extension.pdf?rlkey=argykfeku5bpd2ucvlsoazn75&dl=0" as string | null,
     Graphic: SFTurboSVG,
   },
 ];
@@ -1878,10 +1878,10 @@ function PortfolioSection() {
                 {study.pdfUrl ? (
                   <button
                     onClick={() => handlePdfClick(study.pdfUrl!)}
-                    className="inline-flex items-center gap-1.5 bg-[#F59E0B] hover:bg-[#D97706] text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors"
+                    className="inline-flex items-center gap-1.5 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[13px] font-semibold px-4 py-2 rounded-lg transition-colors"
                     data-testid={`link-portfolio-pdf-${study.id}`}
                   >
-                    View PDF Case Study →
+                    Download PDF Case Study →
                   </button>
                 ) : (
                   <span className="inline-flex items-center gap-1.5 bg-[#F3F4F6] text-[#9CA3AF] text-[13px] font-medium px-4 py-2 rounded-lg cursor-default">
