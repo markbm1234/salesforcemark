@@ -1504,55 +1504,61 @@ function LeadSourceSVG() {
 }
 
 function BulkImportSVG() {
+  const gates = [
+    { x: 12,  title: "Normalize",    metric: "1,247",  sub: "Records cleaned",   color: "#64748B", bg: "#F8FAFC", border: "#CBD5E1", ltr: "N" },
+    { x: 88,  title: "Dedup",        metric: "−356",   sub: "Dupes removed",     color: "#D97706", bg: "#FFFBEB", border: "#FDE68A", ltr: "D" },
+    { x: 164, title: "Opp. Check",   metric: "12",     sub: "Flagged & held",    color: "#DC2626", bg: "#FEF2F2", border: "#FECACA", ltr: "!" },
+    { x: 240, title: "Own. Assign",  metric: "879",    sub: "Reps assigned",     color: "#2563EB", bg: "#EFF6FF", border: "#BFDBFE", ltr: "A" },
+    { x: 316, title: "SF Import",    metric: "612",    sub: "Campaign tagged",   color: "#16A34A", bg: "#F0FDF4", border: "#BBF7D0", ltr: "✓" },
+  ];
   return (
     <svg viewBox="0 0 400 165" className="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <marker id="arr-bulk" markerWidth="7" markerHeight="7" refX="4" refY="3.5" orient="auto">
-          <path d="M 0 0 L 7 3.5 L 0 7 Z" fill="#94A3B8"/>
-        </marker>
-      </defs>
       <rect width="400" height="165" fill="#EEF4FF"/>
-      <rect x="8" y="18" width="90" height="46" rx="6" fill="white" stroke="#E2E8F0" strokeWidth="1"/>
-      <rect x="8" y="18" width="90" height="4" rx="2" fill="#64748B"/>
-      <circle cx="24" cy="26" r="7" fill="#64748B"/>
-      <text x="24" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">1</text>
-      <text x="53" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Raw Dataset</text>
-      <text x="53" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">External data</text>
-      <path d="M 98 41 L 150 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
-      <rect x="152" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="152" y="18" width="90" height="4" rx="2" fill="#2563EB"/>
-      <circle cx="168" cy="26" r="7" fill="#2563EB"/>
-      <text x="168" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">2</text>
-      <text x="197" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Normalize</text>
-      <text x="197" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Phone, email</text>
-      <path d="M 242 41 L 294 41" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
-      <rect x="296" y="18" width="90" height="46" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="296" y="18" width="90" height="4" rx="2" fill="#1E3A8A"/>
-      <circle cx="312" cy="26" r="7" fill="#1E3A8A"/>
-      <text x="312" y="30" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">3</text>
-      <text x="341" y="41" fontSize="8" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Match /</text>
-      <text x="341" y="53" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Deduplication</text>
-      <path d="M 386 41 L 395 41 L 395 84 L 5 84 L 5 116" stroke="#94A3B8" strokeWidth="1.5" fill="none" markerEnd="url(#arr-bulk)"/>
-      <rect x="8" y="116" width="90" height="40" rx="6" fill="white" stroke="#FEF3C7" strokeWidth="1"/>
-      <rect x="8" y="116" width="90" height="3" rx="2" fill="#D97706"/>
-      <circle cx="24" cy="123" r="7" fill="#D97706"/>
-      <text x="24" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">4</text>
-      <text x="53" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Opportunity</text>
-      <text x="53" y="145" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Conflict Check</text>
-      <path d="M 98 136 L 150 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
-      <rect x="152" y="116" width="90" height="40" rx="6" fill="white" stroke="#DBEAFE" strokeWidth="1"/>
-      <rect x="152" y="116" width="90" height="3" rx="2" fill="#2563EB"/>
-      <circle cx="168" cy="123" r="7" fill="#2563EB"/>
-      <text x="168" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">5</text>
-      <text x="197" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Assign Owner</text>
-      <text x="197" y="145" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Territory-based</text>
-      <path d="M 242 136 L 294 136" stroke="#94A3B8" strokeWidth="1.5" markerEnd="url(#arr-bulk)"/>
-      <rect x="296" y="116" width="90" height="40" rx="6" fill="white" stroke="#BBF7D0" strokeWidth="1.5"/>
-      <rect x="296" y="116" width="90" height="3" rx="2" fill="#16A34A"/>
-      <circle cx="312" cy="123" r="7" fill="#16A34A"/>
-      <text x="312" y="127" fontSize="7" fill="white" textAnchor="middle" fontWeight="700" fontFamily="system-ui">6</text>
-      <text x="341" y="133" fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="600" fontFamily="system-ui">Campaign Attr.</text>
-      <text x="341" y="145" fontSize="7" fill="#16A34A" textAnchor="middle" fontFamily="system-ui">✓ Import Validated</text>
+      {/* Header summary bar */}
+      <rect x="6" y="6" width="388" height="38" rx="8" fill="white" stroke="#E2E8F0" strokeWidth="1.5"/>
+      {/* Left: source */}
+      <rect x="6" y="6" width="122" height="38" rx="8" fill="#F1F5F9"/>
+      <rect x="100" y="6" width="28" height="38" fill="#F1F5F9"/>
+      <text x="14" y="19" fontSize="6" fill="#64748B" fontFamily="system-ui" fontWeight="700" letterSpacing="0.5">SOURCE INPUT</text>
+      <text x="14" y="33" fontSize="10.5" fill="#1E293B" fontFamily="system-ui" fontWeight="800">1,247 Records</text>
+      {/* Center: label */}
+      <text x="200" y="20" fontSize="6" fill="#94A3B8" textAnchor="middle" fontFamily="system-ui" fontWeight="600" letterSpacing="0.5">5 GOVERNANCE GATES</text>
+      <line x1="128" y1="25" x2="166" y2="25" stroke="#CBD5E1" strokeWidth="1"/>
+      <line x1="234" y1="25" x2="272" y2="25" stroke="#CBD5E1" strokeWidth="1"/>
+      <polygon points="166,22 172,25 166,28" fill="#CBD5E1"/>
+      <polygon points="268,22 274,25 268,28" fill="#CBD5E1"/>
+      <text x="200" y="34" fontSize="7" fill="#64748B" textAnchor="middle" fontFamily="system-ui">Normalize · Dedup · Opp · Assign · Tag</text>
+      {/* Right: output */}
+      <rect x="278" y="6" width="116" height="38" rx="0" fill="#F0FDF4"/>
+      <rect x="278" y="6" width="8" height="38" fill="#F0FDF4"/>
+      <rect x="278" y="6" width="116" height="38" rx="8" fill="none" stroke="none"/>
+      {/* right rounded corners patch */}
+      <rect x="386" y="6" width="8" height="38" rx="0" fill="#F0FDF4"/>
+      <text x="286" y="19" fontSize="6" fill="#16A34A" fontFamily="system-ui" fontWeight="700" letterSpacing="0.5">IMPORTED</text>
+      <text x="286" y="33" fontSize="10.5" fill="#166534" fontFamily="system-ui" fontWeight="800">612 Leads ✓</text>
+      {/* Gate badge cards */}
+      {gates.map((g) => (
+        <g key={g.title}>
+          {/* Card */}
+          <rect x={g.x} y={52} width={72} height={106} rx={7} fill="white" stroke={g.border} strokeWidth="1.5"/>
+          {/* Top accent */}
+          <rect x={g.x} y={52} width={72} height={5} rx={3.5} fill={g.color}/>
+          <rect x={g.x} y={54} width={72} height={3} fill={g.color}/>
+          {/* Icon circle */}
+          <circle cx={g.x + 36} cy={74} r={13} fill={g.bg} stroke={g.border} strokeWidth="1.5"/>
+          <text x={g.x + 36} y={79} fontSize={g.ltr === "!" ? "13" : "10"} fill={g.color} textAnchor="middle" fontWeight="800" fontFamily="system-ui">{g.ltr}</text>
+          {/* Gate name */}
+          <text x={g.x + 36} y={97} fontSize="7.5" fill="#1E293B" textAnchor="middle" fontWeight="700" fontFamily="system-ui">{g.title}</text>
+          {/* Metric */}
+          <text x={g.x + 36} y={115} fontSize="12" fill={g.color} textAnchor="middle" fontWeight="800" fontFamily="system-ui">{g.metric}</text>
+          {/* Sub-label */}
+          <text x={g.x + 36} y={128} fontSize="6.5" fill="#64748B" textAnchor="middle" fontFamily="system-ui">{g.sub}</text>
+          {/* Connector dot to next card */}
+          {g.x < 316 && (
+            <circle cx={g.x + 72 + 4} cy={105} r={2} fill="#CBD5E1"/>
+          )}
+        </g>
+      ))}
     </svg>
   );
 }
