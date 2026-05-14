@@ -106,6 +106,7 @@ function Navbar() {
 
   const links = [
     { label: "Services", id: "services" },
+    { label: "Case Studies", id: "portfolio" },
     { label: "Process", id: "process" },
     { label: "About", id: "about" },
     { label: "FAQ", id: "faq" },
